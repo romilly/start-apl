@@ -151,7 +151,7 @@ APL variables can contain vectors as well as scalars.
 
 ## System commands
 
-If you've been working on an APL sesion for a while it can be useful to check what variables you have created.
+If you've been working on an APL session for a while it can be useful to check what variables you have created.
 
 APl has a __system command__ to do that. System commands in APL don't create values, but they do useful things.
 One such command will tell you the names of all the variables you have defined. Try it out:
