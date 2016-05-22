@@ -261,7 +261,6 @@ Here's the layout of the UK APL keyboard.
 └───────┴─────┴──────┴──────────────────────────┴──────┴──────┴─────┴──────┘
 ~~~~~~~~
 
-If you get really hooked on APL you will want to invest in a Dyalog keyboard. Until then, you can use the photo below to
-remind you of the locations of APL's special characters.
+If you get really hooked on APL you will want to invest in a Dyalog keyboard.
 
 ![Dyalog APL keyboard](images/dk_rc-800.jpg)
