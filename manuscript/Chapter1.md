@@ -4,8 +4,8 @@
 
 One reason to love APL is that you can try things out as you find out about them, and that's a great way to learn.
 
-To start your first APL session, run __Dyalog__ from the __Programming__ menu. (If you're using RIDE, folow the
-instructions in Appendix 2.)
+To start your first APL session, run __Dyalog__ from the __Programming__ menu. (If you're using RIDE, follow the
+instructions in Appendix 2 - once I've written them!)
 
 ![Dyalog menu](images/dy1.png)
 
@@ -13,8 +13,10 @@ To follow these examples you'll need to start an APL session or log on to the [t
 
 Once you've done that, you can type the code you'll see below.
 
-In the examples that follow, code that you type is indented by six spaces. Once you start trying APL,
+In the examples that follow, code that __you__ type is indented by six spaces. Once you start trying APL,
 you'll see that APL inserts those spaces for you when it's ready for you to type.
+
+APL's output is not indented, so you can easily see what you should type adn what you should expect APL to output.
 
 So - here goes. Type
 
@@ -27,7 +29,7 @@ TODO: add link to wikipedia
 So far, so good. As you can see, the APL environment includes a
 [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) - a Read-Evaluate-Print-Loop.
 
-That means that you can write code and try it out right away. As mentioned above, that's a great way to learn a lanugage,
+That means that you can write code and try it out right away. That's a great way to learn a lanugage,
 and it's also a great way to develop software.
 
 Try some more:
@@ -136,6 +138,17 @@ In the second line you asked APL to add 10 to your current age, and APL displaye
 
 Notice that APL will display a result if you don't tell it what to do with it.
 
+APL variables can contain vectors as well as scalars.
+
+~~~~~~~~
+      ages ← 12 23 19
+      ages
+12 23 19
+      ages×2
+24 46 38
+
+~~~~~~~~
+
 ## System commands
 
 If you've been working on an APL sesion for a while it can be useful to check what variables you have created.
@@ -145,7 +158,7 @@ One such command will tell you the names of all the variables you have defined. 
 
 ~~~~~~~~
       )vars
-age
+age ages
 ~~~~~~~~
 
 In APL, system commands start with an open right bracket. The __vars__ command tells you the name of the variables that
@@ -173,11 +186,56 @@ workspace.
 Then you asked APL to save your worksace. It stored it on disk; if you look in your home directory, you should see a file
 called __course__. It's a binary file, so don't try to edit it!
 
-
 Names are useful. If you are working on more than one project, you can have several workspaces, one for each prject.
 Each ahs a name which will help you find the workspace you want to use for any given session.
 
 ## Finishing your session
+
+Once you've finished a session you can close APL down by typing a system command:
+
+~~~~~~~~
+      )off
+~~~~~~~~
+
+APL will close down.
+
+If you want to get your work back, restart APL from the Programming menu. You will start a new session with a new
+clear workspace. To resume your work you must load your saved workspace. Type
+
+~~~~~~~~
+      )load course
+./course saved Sun May 22 17:09:17 2016
+~~~~~~~~
+
+Now you can check that the workspace still contains your variable:
+
+~~~~~~~~
+      )vars
+age ages
+      age
+23
+~~~~~~~~
+
+Well done! You've taken the first step to mastering APL. Now try the following simple exercises to consolidate what
+you've learned.
+
+## Exercises
+
+### 1.1
+
+Create a variable called __income__ containing the vector 10000 11570 11000 12550. (This might contain someone's income
+for the last four quarters of the year.)
+
+Create another variable containing the vector 7250 8345 9547 12650. This might show how much that person spent
+in each quarter.
+
+Now calculate and display what they saved each quarter. Of course, if they spent more than they earned the savings will
+be negative.
+
+### 1.2
+
+Create a variable __weights__ containg the numbers 10.2 8,3 7.5 and convert from pounds to kilogrammes.
+A pound is roughly 0.45 kilogrammes,
 
 
 
