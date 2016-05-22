@@ -1,5 +1,7 @@
 # Introduction
 
+(currently just a skeleton)
+
 ## Who should read this book
 
 ## Why APL?
