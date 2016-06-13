@@ -8,6 +8,8 @@
 
 ## Try APL
 
+## Running APL on your own hardware
+
 ## Installing APL on your Raspberry Pi
 
 ## Installing APL on other computers

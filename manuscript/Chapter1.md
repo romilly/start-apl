@@ -2,21 +2,25 @@
 
 ## Getting started
 
-One reason to love APL is that you can try things out as you find out about them, and that's a great way to learn.
+Time to start APL - and start learning!
 
-To start your first APL session, run __Dyalog__ from the __Programming__ menu. (If you're using RIDE, follow the
+To begin your first APL session on a Raspberry Pi, run __Dyalog__ from the __Programming__ menu.
+
+(If you're using RIDE to connect to a Raspberry Pi or some other computer with APL installed, follow the
 instructions in Appendix 2 - once I've written them!)
 
 ![Dyalog menu](images/dy1.png)
 
-To follow these examples you'll need to start an APL session or log on to the [tryapl.org](http://tryapl.org/) website.
+The APL environment includes a
+[REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) - a Read-Evaluate-Print-Loop.
 
-Once you've done that, you can type the code you'll see below.
+That means that you can write code and try it out right away. That's a great way to learn a lanugage,
+and it's also a great way to develop software.
 
-In the examples that follow, code that __you__ type is indented by six spaces. Once you start trying APL,
-you'll see that APL inserts those spaces for you when it's ready for you to type.
+In the examples that follow, code that __you__ type is indented by six spaces. Once you start your session
+you'll see that APL inserts those spaces for you when it's your turn to type.
 
-APL's output is not indented, so you can easily see what you should type adn what you should expect APL to output.
+APL's output is **not** indented, so you can see what you should type and what you should expect APL to output.
 
 So - here goes. Type
 
@@ -25,12 +29,6 @@ So - here goes. Type
 4
 ~~~~~~~~
 
-TODO: add link to wikipedia
-So far, so good. As you can see, the APL environment includes a
-[REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) - a Read-Evaluate-Print-Loop.
-
-That means that you can write code and try it out right away. That's a great way to learn a lanugage,
-and it's also a great way to develop software.
 
 Try some more:
 
@@ -49,9 +47,10 @@ Plus and minus are __primitive functions__ in APL. What about multiply and divid
 
 APL uses the same symbols that I was taught at school: `×` for multiply, and `÷` for divide.
 
-If you're using the tryapl.org website, you can type these symbols by clicking on the APL Keyboard button at the top
-right of your browser window. If you're running APL on a Raspberry Pi, you can hold down the Windows key to type APL
-symbols.
+If you're running on a Raspberry Pi or a Windows computer you can hold down the Windows key to type APL symbols.
+
+If you're using RIDE on some other computer you will need to configure your keyboard for APL. You'll find instructions
+in Appendix 3.
 
 * Type Windows- and you should see a `×` symbol
 * Type Windows-equals to get the `÷` sign.
@@ -104,8 +103,8 @@ That last example works, but it's a bit tedious to type. Fortunately there is an
 3.1 5.1	4.1 2.1
 ~~~~~~~~
 
-If you ask APL to multiply (or add, or subtract, or divide) a number on its own and a vctor of numbers, APL will use the
-single number repeatedly. A single number on its own is called a __scalar__. The repeated use of ascalazr when you're
+If you ask APL to multiply (or add, or subtract, or divide) a number on its own and a vector of numbers, APL will use the
+single number repeatedly. A single number on its own is called a __scalar__. The repeated use of a scalar when you're
 adding it to a vector is called __scalar extension__.
  
 What happens if you try to add two vectors of different lengths?
@@ -123,7 +122,7 @@ Don't worry about causing APL errors. APL will try to tell you what went wrong, 
 
 ## Assigning values to variables
 
-It would be rather tedious if you had to type values in to APL every time you wanted to use them. Fortunatly, you can
+It would be rather tedious if you had to type values in to APL every time you wanted to use them. Fortunately, you can
 tell APl to remember values you want to use repeatedly. Suppose you are currently 23. Type:
 
 ~~~~~~~~
@@ -153,7 +152,7 @@ APL variables can contain vectors as well as scalars.
 
 If you've been working on an APL session for a while it can be useful to check what variables you have created.
 
-APl has a __system command__ to do that. System commands in APL don't create values, but they do useful things.
+APl has a __system command__ to do that. System commands in APL don't create values, but they do other useful things.
 One such command will tell you the names of all the variables you have defined. Try it out:
 
 ~~~~~~~~
@@ -164,9 +163,9 @@ age ages
 In APL, system commands start with an open right bracket. The __vars__ command tells you the name of the variables that
 are currently defined.
 
-When you work in an AL session, the variables you create are held in what APL calls the __current workspace__.
+When you work in an APL session, the variables you create are held in what APL calls the __current workspace__.
 
-A workspace can also contain functions and other things. We'll cover these later in this course.
+A workspace can also contain functions and other things. We'll cover these later in this book.
 
 When you have finished an APL session, you can save the contents of your workspace, and return to it when next
 you use APL. Try the following commands:
@@ -180,13 +179,15 @@ course saved Sun May 22 17:09:17 2016
 
 What did that do?
 
-The first dommand gave a name to your workspace. (Previously it had no name, so APL showed that it was a clear
+The first command gave a name to your workspace. (Previously it had no name, so APL showed that it was a clear
 workspace.
 
-Then you asked APL to save your worksace. It stored it on disk; if you look in your home directory, you should see a file
-called __course__. It's a binary file, so don't try to edit it!
+Then you asked APL to save your workspace. It stored it on disk. If you look in your home directory, you should see a
+file called __course__.
 
-Names are useful. If you are working on more than one project, you can have several workspaces, one for each prject.
+It's a binary file, so don't try to edit it!
+
+Names are useful. If you are working on more than one project, you can have several workspaces, one for each project.
 Each ahs a name which will help you find the workspace you want to use for any given session.
 
 ## Finishing your session
@@ -234,7 +235,7 @@ be negative.
 
 ### 1.2
 
-Create a variable __weights__ containg the numbers 10.2 8,3 7.5 and convert from pounds to kilogrammes.
+Create a variable __weights__ containing the numbers 10.2 8,3 7.5 and convert from pounds to kilogrammes.
 A pound is roughly 0.45 kilogrammes,
 
 
