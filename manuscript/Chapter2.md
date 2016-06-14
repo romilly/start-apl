@@ -73,7 +73,7 @@ You can tell APL to do that by using parentheses (round brackets). Here's the co
 You might need to calculate a lot of averages in some applications. It would be tedious to have to type the same code
 over and over again, so APL lets you create _user-defined functions_.
 
-The simplest way to do this is to use _direct definition_. To create a fuiction that way, you type an expression
+The simplest way to do this is to use _direct definition_. To create a function that way, you type an expression
 and give it a name.
 
 The average will be a function which takes a single argument on its right which will be the array to be averaged.
