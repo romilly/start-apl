@@ -188,7 +188,7 @@ file called __course__.
 It's a binary file, so don't try to edit it!
 
 Names are useful. If you are working on more than one project, you can have several workspaces, one for each project.
-Each has a name which will help you find the workspace you want to use for any given session.
+Each ahs a name which will help you find the workspace you want to use for any given session.
 
 ## Finishing your session
 

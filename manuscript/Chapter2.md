@@ -129,14 +129,3 @@ Suppose you have a box of size 2 cm by 3 cm by 6 cm. What is its volume?
       volume
 36
 ~~~~~~~~
-
-
-
-
-
-
-
-
-
-~~~~~~~~
-~~~~~~~~
