@@ -31,7 +31,7 @@ First, here is a shortcut for calculating totals.
 54
 ~~~~~~~~
 
-+/ (pronounced the _plus reduction_ of ages) tells APL to insert the + function between each item in `ages`.
++/ages (pronounced the _plus reduction_ of ages) tells APL to insert the + function between each item in `ages`.
 That calculates the total.
 
 Now you need an easy way to find out hom many items there are in `ages`. It's obvious if there are just three items,
@@ -44,7 +44,7 @@ Here's the quick way to find out.
 3
 ~~~~~~~~
 
-Used this way, the greek letter ⍴ (or rho) tells you the shape of the `ages` array.
+Used this way, the greek letter `⍴` (or rho) tells you the shape of the `ages` array.
 
 You can combine the two fragments of code.
 
