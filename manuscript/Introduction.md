@@ -10,12 +10,14 @@ Here are some good reasons to learn this powerful language
 
 1. APL is concise and expressive, so you can try out new ideas very quickly.
 1. APL is focused on arrays, so it will change the way you think about programming (in a good way).
-1. The demand for APL developers exceeds the supply, so it can help you finds a job.
+1. The demand for APL developers exceeds the supply, so it can help you find a job.
 1. It's challenging and fun, so it will help you stretch your mind.
 
 ## Criticisms of APL and why you should ignore them
 
 Here's a story from APL's distant past. It was originally told by Alan Perlis, one of the giants of Computer Science.
+
+(TODO; Add story and other material)
 
 
 ## Reasons not to learn APL
