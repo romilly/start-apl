@@ -243,6 +243,6 @@ A pound is roughly 0.45 kilogrammes,
 
 Here's the layout of the UK APL keyboard.
 
-TODO: Explain about key shifts
+TODO: Explain about key shifts and move earlier in text.
 
 ![Dyalog APL keyboard](images/apl-keyboard.jpg)
