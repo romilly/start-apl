@@ -3,4 +3,4 @@ Chapter1.md
 Chapter2.md
 Appendix1.md
 Appendix2.md
-Appendix3.md
+Author.md

@@ -1,4 +1,6 @@
-# Appendix 1 - Installing APL on the Raspberry Pi
+# Appendix 1
+
+## Installing APL on the Raspberry Pi
 
 You can download and install a copy of APL for the Raspberry Pi from Dyalog. It's free for personal use. If you want to 
 use it for work, or create a product that you or others sell, you will need to get a commercial license.
