@@ -40,7 +40,7 @@ Here's a story from APL's distant past. It was originally told by Professor Alan
 _Taken from a transcription of a talk given by Professor Perlis at the APL’78 Conference held at Foothill College,
 Los Altos, CA. on 1978-03-29. via Roger Hui_
 
-One of the things that distinguished Perlis was his growth mindset.
+One of the many things that distinguished Perlis was his [growth mindset](http://mindsetonline.com/whatisit/about/).
 
 ## Reasons not to learn APL
 
