@@ -203,12 +203,12 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
 <node TEXT="Resources" POSITION="left" ID="Freemind_Link_1594441695" CREATED="1273319832507" MODIFIED="1296303609303" COLOR="#33ff33">
 <icon BUILTIN="password"/>
+<node TEXT="Longest Collatz sequence" ID="ID_590839814" CREATED="1465985721459" MODIFIED="1465998408816" LINK="https://projecteuler.net/problem=14"/>
 </node>
 </node>
 </map>
