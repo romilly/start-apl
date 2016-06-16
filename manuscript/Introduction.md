@@ -24,12 +24,9 @@ It **does** suggest resources which cover those topics.
 
 One great fact about APL is that you can do a lot with a little knowledge.
 
-Here are some concise APL expressions. Each does something useful, and you will learn how and why to read and write
-code like these examples early in the book.
+In the section on APL power examples later in this introduction you can see some of the code you'll have mastered
+in the first three chapters of this book.
 
-The titles below tell you which chapter each example comes from.
-
-TODO: Add examples to chapters and review content plan.
 
 ## Reasons to learn APL
 
@@ -91,8 +88,8 @@ Of our large group of students
 * a few disliked it.
 * one or two became outstanding. They produced a steady stream of elegant, expressive, innovative solutions over many years.
 
-Many of the past winners of Dyalog's annual problem solving contest learned enough APL to **win the competition** in one
-or two weeks.
+Many of the past winners of Dyalog's annual problem solving contest **learned enough APL to win the competition in one
+or two weeks**.
 
 ### APL is slow
 
@@ -111,6 +108,13 @@ APL users run apprenticeship schemes or their equivalent to ensure a steady supp
 _This section intentionally left blank_
 
 ## APL power examples
+
+Here are some concise APL expressions. Each does something useful, and you will learn how and why to read and write
+code like these examples early in the book.
+
+The titles below tell you which chapter each example comes from.
+
+TODO: Add examples to chapters and review content plan.
 
 ### Histogram (Chapter 1)
 
