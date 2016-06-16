@@ -9,7 +9,7 @@ You should read this book if you want to
 * decide if APL is appropriate for your project
 * take part in the Dyalog annual APL problem-solving competition
 
-The book is written for people running Dyalog APL.
+The book is written for people learning Dyalog APL.
  
 You can run Dyalog APL on a Raspberry Pi for free. There are free educational and low-cost personal licenses available
 for Windows, Linux and OS/X. You'll find more information in the Appendices.
@@ -38,7 +38,7 @@ Here are some good reasons to learn this powerful language
 1. The APL community is full of bright and helpful people, so you will expand your network of contacts.
 1. The demand for APL developers exceeds the supply, so knowing APL can help you find a job.
 
-## Views of APL and how to react to them
+## Myths about APL
 
 Here's a story from APL's distant past. It was originally told by Professor Alan Perlis,
 one of the giants of Computer Science.
@@ -66,17 +66,17 @@ or recall myths that they have heard, and decide to ignore the language without 
 
 Here are a few of the myths I still hear about APL, along with my perspective on them.
 
-### APL is hard to read.
+### Myth: APL is hard to read.
 
 APL **is** hard to read if you haven't learned the language.
 
-So is Chinese, but there are over a billion people who have learned to read Chinese,
+So is Chinese, but there are over a billion people who can read Chinese,
 and APL is _much, much_ easier to learn!
 
 It takes most people a few days to 'get their eye in' to the point where the APL characters no longer look strange.
 From then on they can read well-written APL with ease, and they can read bad APL code if they have to.
 
-### APL is hard to learn
+### Myth: APL is hard to learn
 
 It  is, for some people, but not for most. I've taught hundreds of students, and talked to instructors who have taught
 thousands more. We've had broadly similar experiences.
@@ -91,11 +91,11 @@ Of our large group of students
 Many of the past winners of Dyalog's annual problem solving contest **learned enough APL to win the competition in one
 or two weeks**.
 
-### APL is slow
+### Myth: APL is slow
 
 Badly written APL is about as slow as badly written Python. Well-written APL is as fast as (or faster than) well-written C.
 
-### APL is dead
+### Myth: APL is dead
 
 It's true that the hundreds of thousands of 1980s customers who used IBM mainframe APL packages like ADI and ADRS have
 long since migrated to using databases, report generators and spreadsheets.
@@ -116,7 +116,7 @@ The titles below tell you which chapter each example comes from.
 
 TODO: Add examples to chapters and review content plan.
 
-### Histogram (Chapter 1)
+### Histogram (Chapter 2)
 
 ~~~~~~~~
        hist←'.⎕'[x∘.>⍳⌈/x] ⍝ display histogram of positive integer values
@@ -139,6 +139,7 @@ The default delimiter for wc is space.
     ' :"'  wc 'He responded:"Can I quote you on that?"'
 8
 ~~~~~~~~
+
 ### Balanced Parentheses (Chapter 2)
 
 **bp** returns 0 if parentheses are unbalanced, 1 if they are balanced
@@ -153,7 +154,7 @@ The default delimiter for wc is space.
 0
 ~~~~~~~~
 
-### Prime numbers (Chapter 2)
+### Prime numbers (Chapter 3)
 
 Find all the primes up to N using the _Sieve of Eratosthenes_
 
