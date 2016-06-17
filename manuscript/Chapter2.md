@@ -105,7 +105,9 @@ The function will work for any number of items.
 This example used reduction. In APL, reduction is considered to be an _operator_.
 An operator takes one or more operands and creates a new function.
 
-In _plus reduction_, the operator / takes + (the addition function) and turns it into a new function, _sum_.
+A _function_ (like +, -, and ⍴, among many others) takes one or two array arguments and returns an array result.
+
+In _plus reduction_, the operator / takes + (the add function) and turns it into a new function, _sum_.
 
 What do you think _times reduction_ would do? (You'd write that as ×/)
 
@@ -120,7 +122,8 @@ Try it out.
 1000
 ~~~~~~~~
 
-Times reduction calculates the product of a vector. Sometimes that's useful.
+Times reduction calculates the product of a vector.
+
 Suppose you have a box of size 2 cm by 3 cm by 6 cm. What is its volume?
 
 ~~~~~~~~
@@ -129,3 +132,41 @@ Suppose you have a box of size 2 cm by 3 cm by 6 cm. What is its volume?
       volume
 36
 ~~~~~~~~
+
+So far you've met vectors and scalars. One of APL's great strengths is that it can handle arrays of higher dimension.
+
+You've probably met _matrices_ (arrays with two axes); you may have met _tensors_ (arrays with three or more axes).
+APL handles them all with ease.
+
+You can create a matrix using the _reshape_ function.
+
+~~~~~~~~
+      2 3⍴1 2 3 4 5 6
+1 2 3
+4 5 6
+~~~~~~~~
+
+That may look surprising, Earlier you saw `⍴` used with just one argument to its right; it returned the _shape_ of the argument.
+When ⍴ is used with arguments to its left and right, it _reshapes_ the right argument according to the value specified
+in the left argument.
+
+What do you thing will be the result of executing `⍴ 2 3⍴ 1 2 3 4 5 6`?
+
+APL reads this as 'return the shape of reshaping 1 2 3 4 5 6 into a 2-row, 3-column matrix' so the result is the
+vector 2 3.
+
+~~~~~~~~
+      ⍴2 3⍴1 2 3 4 5 6
+2 3
+~~~~~~~~
+
+Many of APL's symbols have two meanings depending on whether they are used with one argument or two.
+Use with one argument is called _Monadic_, and use with two arguments is called _Dyadic_.
+
+For example, the `÷` symbol, used dyadically, means division. Used monadically, it means _reciprocal_.
+(The reciprocal of a number is 1 dived by that number).
+
+~~~~~~~~
+
+~~~~~~~~
+

@@ -4,7 +4,7 @@
 
 Time to start APL - and start learning!
 
-To begin your first APL session on a Raspberry Pi, run __Dyalog__ from the __Programming__ menu.
+To begin your first APL session on a Raspberry Pi, run _Dyalog_ from the _Programming_ menu.
 
 (If you're using RIDE to connect to a Raspberry Pi or some other computer with APL installed, follow the
 instructions in Appendix 2 - once I've written them!)
@@ -17,7 +17,7 @@ The APL environment includes a
 That means that you can write code and try it out right away. That's a great way to learn a lanugage,
 and it's also a great way to develop software.
 
-In the examples that follow, code that __you__ type is indented by six spaces. Once you start your session
+In the examples that follow, code that _you_ type is indented by six spaces. Once you start your session
 you'll see that APL inserts those spaces for you when it's your turn to type.
 
 APL's output is **not** indented, so you can see what you should type and what you should expect APL to output.
@@ -39,11 +39,11 @@ Try some more:
 ¯1
 ~~~~~~~~
 
-Note how APL represents negative numbers using a `¯` symbol. The `¯` (called __high minus__) is part of the way you
-write the value __negative one__. That's different from the - symbol (called __minus__) which tells APL to do a
+Note how APL represents negative numbers using a `¯` symbol. The `¯` (called _high minus_) is part of the way you
+write the value _negative one_. That's different from the - symbol (called _minus_) which tells APL to do a
 subtraction.
 
-Plus and minus are __primitive functions__ in APL. What about multiply and divide? Of course APL does those too.
+Plus and minus are _primitive functions_ in APL. What about multiply and divide? Of course APL does those too.
 
 APL uses the same symbols that I was taught at school: `×` for multiply, and `÷` for divide.
 
@@ -79,7 +79,7 @@ Now for something rather different. Try the experiment below,
 
 What's going on?
 
-APL treat the two lists of numbers as __vectors__ and it adds the corresponding elements together.
+APL treat the two lists of numbers as _vectors_ and it adds the corresponding elements together.
 
 A lot of calculations need to be done on vectors, and APL's built-in looping makes this really easy.
 
@@ -104,8 +104,8 @@ That last example works, but it's a bit tedious to type. Fortunately there is an
 ~~~~~~~~
 
 If you ask APL to multiply (or add, or subtract, or divide) a number on its own and a vector of numbers, APL will use the
-single number repeatedly. A single number on its own is called a __scalar__. The repeated use of a scalar when you're
-adding it to a vector is called __scalar extension__.
+single number repeatedly. A single number on its own is called a _scalar_. The repeated use of a scalar when you're
+adding it to a vector is called _scalar extension_.
  
 What happens if you try to add two vectors of different lengths?
 
@@ -131,7 +131,7 @@ tell APl to remember values you want to use repeatedly. Suppose you are currentl
 33
 ~~~~~~~~
 
-The first line you typed told APL to assign the value 23 to a new variable __age__.
+The first line you typed told APL to assign the value 23 to a new variable _age_.
 
 In the second line you asked APL to add 10 to your current age, and APL displayed the result.
 
@@ -152,7 +152,7 @@ APL variables can contain vectors as well as scalars.
 
 If you've been working on an APL session for a while it can be useful to check what variables you have created.
 
-APl has a __system command__ to do that. System commands in APL don't create values, but they do other useful things.
+APl has a _system command_ to do that. System commands in APL don't create values, but they do other useful things.
 One such command will tell you the names of all the variables you have defined. Try it out:
 
 ~~~~~~~~
@@ -160,10 +160,10 @@ One such command will tell you the names of all the variables you have defined. 
 age ages
 ~~~~~~~~
 
-In APL, system commands start with an open right bracket. The __vars__ command tells you the name of the variables that
+In APL, system commands start with an open right bracket. The _vars_ command tells you the name of the variables that
 are currently defined.
 
-When you work in an APL session, the variables you create are held in what APL calls the __current workspace__.
+When you work in an APL session, the variables you create are held in what APL calls the _current workspace_.
 
 A workspace can also contain functions and other things. We'll cover these later in this book.
 
@@ -183,7 +183,7 @@ The first command gave a name to your workspace. (Previously it had no name, so 
 workspace.
 
 Then you asked APL to save your workspace. It stored it on disk. If you look in your home directory, you should see a
-file called __course__.
+file called _course_.
 
 It's a binary file, so don't try to edit it!
 
@@ -224,7 +224,7 @@ you've learned.
 
 ### 1.1
 
-Create a variable called __income__ containing the vector 10000 11570 11000 12550. (This might contain someone's income
+Create a variable called _income_ containing the vector 10000 11570 11000 12550. (This might contain someone's income
 for the last four quarters of the year.)
 
 Create another variable containing the vector 7250 8345 9547 12650. This might show how much that person spent
@@ -235,7 +235,7 @@ be negative.
 
 ### 1.2
 
-Create a variable __weights__ containing the numbers 10.2 8,3 7.5 and convert from pounds to kilogrammes.
+Create a variable _weights_ containing the numbers 10.2 8,3 7.5 and convert from pounds to kilogrammes.
 A pound is roughly 0.45 kilogrammes,
 
 
