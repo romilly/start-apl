@@ -15,6 +15,12 @@ You can run Dyalog APL on a Raspberry Pi for free. There are also free education
 available for Windows, other Linux computers and OS/X. You'll find more information in the Appendices and on the
 [Dyalg APL website](http://www.dyalog.com/)
 
+## Early access
+
+The book is **currently incomplete** and is offered in Early Access format at a reduced price. Once you have pruchased
+the eBook you will be entitled to future updates free of charge, and you are also covered by Leanpub's 45 day
+unconditional money-back guarantee.
+
 ## What you will learn.
 
 You'll learn enough APL to write useful code and you will be able to continue your exploration of APL
@@ -182,7 +188,8 @@ See the appendices.
 
 ### Installing APL on your Raspberry Pi
 
-TBD
+Assuming that you have a Raspberry Pi set up and connected to the internet, you can downlaod and install APL in a matter
+of minutes. Deatils are in Appendix 1.
 
 
 ## Conventions in this book
