@@ -100,9 +100,9 @@ The function will work for any number of items.
 5
 ~~~~~~~~
 
-## APL Operators
+## APL Operators - reduction
 
-This example used reduction. In APL, reduction is considered to be an _operator_.
+This example used reduction. In APL, reduction is defined to be an _operator_.
 An operator takes one or more operands and creates a new function.
 
 A _function_ (like +, -, and ⍴, among many others) takes one or two array arguments and returns an array result.
@@ -133,6 +133,8 @@ Suppose you have a box of size 2 cm by 3 cm by 6 cm. What is its volume?
 36
 ~~~~~~~~
 
+## Matrices and Tensors
+
 So far you've met vectors and scalars. One of APL's great strengths is that it can handle arrays of higher dimension.
 
 You've probably met _matrices_ (arrays with two axes); you may have met _tensors_ (arrays with three or more axes).
@@ -160,13 +162,53 @@ vector 2 3.
 2 3
 ~~~~~~~~
 
-Many of APL's symbols have two meanings depending on whether they are used with one argument or two.
-Use with one argument is called _Monadic_, and use with two arguments is called _Dyadic_.
+If you ask APL to reshape an array and there are not enough elements to populate your result, APL cycles through the
+array you provide as often as necessary.
 
-For example, the `÷` symbol, used dyadically, means division. Used monadically, it means _reciprocal_.
-(The reciprocal of a number is 1 dived by that number).
+~~~~~~~~
+      2 3⍴1 2 3
+1 2 3
+1 2 3
+~~~~~~~~
+
+You can create multi-dimensional arrays jst as easily.
+
+~~~~~~~~
+      2 3 4⍴0 1
+0 1 0 1
+0 1 0 1
+0 1 0 1
+       
+0 1 0 1
+0 1 0 1
+0 1 0 1
+~~~~~~~~
+
+As you can see, APL displays a 3-axis array one plane at a time with a blank row between them.
+
+How can you find out how many axes an APL array has? Use `⍴⍴`, called _rank_.
+
+Rank is not a new function. It is just the repeated use of `⍴` (or shape).
+
+Recall that the shape of an array tells you how big it is in each dimension, so the shape of the shape tells you how many
+dimensions there are.
 
 ~~~~~~~~
 
+~~~~~~~~
+
+## Monadic and Dyadic functions
+
+Like `⍴` , many of APL's symbols have two meanings depending on whether they are used with one argument or two.
+Use with one argument is called _Monadic_, and use with two arguments is called _Dyadic_.
+
+For example, the `÷` symbol, used dyadically, means division. Used monadically, it means _reciprocal_.
+(The reciprocal of a number is 1 divided by that number).
+
+~~~~~~~~
+      1 2 4 8 ÷ 2
+0.5 1 2 4
+           ÷2
+0.5
 ~~~~~~~~
 
