@@ -17,9 +17,9 @@ available for Windows, other Linux computers and OS/X. You'll find more informat
 
 ## Early access
 
-The book is **currently incomplete** and is offered in Early Access format at a reduced price. Once you have pruchased
-the eBook you will be entitled to future updates free of charge, and you are also covered by Leanpub's 45 day
-unconditional money-back guarantee.
+The book is **currently incomplete** and is offered in **Early Access format at a reduced price**. Once you have purchased
+the eBook **you will be entitled to future updates free of charge**, and you are also covered by Leanpub's **45 day
+unconditional money-back guarantee**.
 
 ## What you will learn.
 
