@@ -49,7 +49,7 @@ Used this way, the greek letter `⍴` (or rho) tells you the shape of the `ages`
 You can combine the two fragments of code.
 
 ~~~~~~~~
-      +/ages÷⍴ages
+      +/ages÷⍴ ages
 18
 ~~~~~~~~
 
@@ -64,7 +64,7 @@ That's a better approach, as it does one division instead of three.
 You can tell APL to do that by using parentheses (round brackets). Here's the code:
 
 ~~~~~~~~
-      (+/ages)÷⍴ages
+      (+/ages)÷⍴ ages
 18
 ~~~~~~~~
 
