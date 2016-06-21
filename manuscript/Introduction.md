@@ -188,8 +188,8 @@ See the appendices.
 
 ### Installing APL on your Raspberry Pi
 
-Assuming that you have a Raspberry Pi set up and connected to the internet, you can downlaod and install APL in a matter
-of minutes. Deatils are in Appendix 1.
+Assuming that you have a Raspberry Pi set up and connected to the internet, you can download and install APL in a matter
+of minutes. Details are in Appendix 1.
 
 
 ## Conventions in this book
