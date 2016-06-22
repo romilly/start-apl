@@ -133,7 +133,7 @@ Suppose you have a box of size 2 cm by 3 cm by 6 cm. What is its volume?
 36
 ~~~~~~~~
 
-## Matrices and Tensors
+## Matrices
 
 So far you've met vectors and scalars. One of APL's great strengths is that it can handle arrays of higher dimension.
 
@@ -171,10 +171,11 @@ array you provide as often as necessary.
 1 2 3
 ~~~~~~~~
 
-You can create multi-dimensional arrays jst as easily.
+You can create multi-dimensional arrays just as easily.
 
 ~~~~~~~~
-      2 3 4⍴0 1
+      bits←2 3 4⍴0 1
+      bits
 0 1 0 1
 0 1 0 1
 0 1 0 1
@@ -190,12 +191,29 @@ How can you find out how many axes an APL array has? Use `⍴⍴`, called _rank_
 
 Rank is not a new function. It is just the repeated use of `⍴` (or shape).
 
-Recall that the shape of an array tells you how big it is in each dimension, so the shape of the shape tells you how many
-dimensions there are.
+Recall that the shape of an array is an array that tells you its size in each dimension, so the rank
+(the shape of the shape) tells you how many dimensions there are.
 
 ~~~~~~~~
+      ⍴⍴ ages ⍝ ages is a vector
+1
+      ⍴⍴ mat ⍝ mat is a matrix
+2
+      ⍴⍴ bits ⍝ bits is a tensor
+3
+~~~~~~~~
+
+What do you think is the rank of a scalar: a number on its own, like the variable `age`?
 
 ~~~~~~~~
+      age←42
+      ⍴⍴ age ⍝ age is a scalar
+0
+~~~~~~~~
+
+A scalar has rank zero. Don't worry if that seems a little strange at first; just try to remember it,
+and don't let it surprise you when you see it again!
+
 
 ## Monadic and Dyadic functions
 
