@@ -21,6 +21,10 @@ The book is **currently incomplete** and is offered in **Early Access format at 
 the eBook **you will be entitled to future updates free of charge**, and you are also covered by Leanpub's **45 day
 unconditional money-back guarantee**.
 
+## Online support
+
+The book now has a [Google Group](https://groups.google.com/forum/#!forum/learn-apl) to support reviewers and readers.
+
 ## What you will learn.
 
 You'll learn enough APL to write useful code and you will be able to continue your exploration of APL
@@ -93,7 +97,8 @@ Of our large group of students
 * some became expert. They fell in love with the language and used it whenever they could.
 * most became competent. They used APL effectively when they needed to.
 * a few disliked it.
-* one or two became outstanding. They produced a steady stream of elegant, expressive, innovative solutions over many years.
+* one or two became outstanding. They produced a steady stream of elegant, expressive, innovative solutions over many
+years.
 
 Many of the past winners of Dyalog's annual problem solving contest **learned enough APL to win the competition in one
 or two weeks**.
