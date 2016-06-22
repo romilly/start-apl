@@ -79,6 +79,8 @@ Now for something rather different. Try the experiment below,
 
 What's going on?
 
+## Array programming without explicit loops
+
 APL treat the two lists of numbers as _vectors_ and it adds the corresponding elements together.
 
 A lot of calculations need to be done on vectors, and APL's built-in looping makes this really easy.
@@ -147,6 +149,63 @@ APL variables can contain vectors as well as scalars.
 24 46 38
 
 ~~~~~~~~
+
+## A shortcut to counting
+
+In one of the earlier examples you added the vector 1 2 3 to the vector 4 5 6.
+
+Mathematicians call vectors like that _arithmetic progressions_, and you way well need to use them in your software.
+
+APL has a particularly easy way to create them, using the `⍳` function.
+
+Here are a some examples of its use:
+~~~~~~~~
+      ⍳3
+1 2 3
+      3 + ⍳3
+4 5 6
+      (⍳3) + 3 + ⍳3
+5 7 9
+      2 × ⍳5
+2 4 6 8 10
+~~~~~~~~
+
+I> By default APL starts counting at one. In Chapter 6 you will see a way to get APL to start counting at zere. Some
+programs are simpler when written that way.
+
+## Illuminate your code - use comments
+
+As you get more experienced in APL programming the code you write will get more complex.
+
+Most code is read more often than it is written, so you should consider documenting it using _comments_.
+
+The APL symbol for a comment is `⍝` - often called _lamp_ because it's intended to illuminate your code.
+
+Whenever the APl interpreter encounters a comment it ignores the rest of that line. You'll find two styles of comment
+widely used in APL code.
+
+1. A stand-alone comment starts with a lamp symbol. That means tha nothing on that line will get executed.
+1. An in-line comment follows some executable code on the same line. It explains what the code does or why it is
+written that way.
+
+### What should you comment? The Three AM rule
+
+This advice comes from APL guru Roy Sykes. It's called 'The three AM rule', and it applies to programming in any
+language. Here's how I once heard Roy explain the rule:
+
+> Imagine that you're asleep at home at 3 o'clock in the morning.
+
+> The phone rings. And rings. And rings.
+
+> You answer it.
+
+> 'Hi Roy. The production system has just fallen over. Can you fix it?'
+
+> When you take a look at the application, what style of code do you hope you'll see? That's the way _you_ should code.
+
+That's the three AM rule. Write code that you, or other developers, would be relieved to see if they are trying to fix a
+problem at three o'clock in the morning.
+
 
 ## System commands
 
