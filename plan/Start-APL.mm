@@ -280,15 +280,6 @@
 </node>
 <node TEXT="Ideas" ID="Freemind_Link_1517433488" CREATED="1266488273147" MODIFIED="1266488921179" COLOR="#36d12a">
 <icon BUILTIN="idea"/>
-</node>
-<node TEXT="Fridge" ID="Freemind_Link_1954142386" CREATED="1266488793745" MODIFIED="1266488959040" COLOR="#9679df">
-<icon BUILTIN="desktop_new"/>
-<node TEXT="Memory-based Arrays" ID="ID_1525064537" CREATED="1466155242040" MODIFIED="1466155249093"/>
-<node TEXT="Plotting" ID="ID_1263786393" CREATED="1463978299033" MODIFIED="1463978302382">
-<node TEXT="SharpPlot" ID="ID_655387680" CREATED="1466154827050" MODIFIED="1466154836671"/>
-</node>
-<node TEXT="YouTube video" ID="ID_1274709685" CREATED="1466410119858" MODIFIED="1466410134871"/>
-<node TEXT="Udemy course" ID="ID_613147389" CREATED="1466410129522" MODIFIED="1466410147494"/>
 <node TEXT="APL checker" ID="ID_1665709478" CREATED="1466574867588" MODIFIED="1466575112484"><richcontent TYPE="NOTE">
 
 <html>
@@ -310,6 +301,65 @@
 
 </richcontent>
 </node>
+<node TEXT="Why programmers are often off-by-one, and how you can avoid the problem" ID="ID_1721503280" CREATED="1466576605605" MODIFIED="1466577292599">
+<node TEXT="https://en.wikipedia.org/wiki/Zero-based_numbering" ID="ID_1914789114" CREATED="1466581676404" MODIFIED="1466581678378"/>
+<node TEXT="https://en.wikipedia.org/wiki/Off-by-one_error" ID="ID_209747349" CREATED="1466581694078" MODIFIED="1466581694078" LINK="https://en.wikipedia.org/wiki/Off-by-one_error"/>
+</node>
+<node TEXT="Four ways to connect to your Raspberry Pi" ID="ID_1486830051" CREATED="1466577305203" MODIFIED="1466577330207"/>
+<node TEXT="YouTube video" ID="ID_1274709685" CREATED="1466410119858" MODIFIED="1466410134871"/>
+<node TEXT="Udemy course" ID="ID_613147389" CREATED="1466410129522" MODIFIED="1466410147494">
+<node TEXT="music" ID="ID_231808646" CREATED="1466585250340" MODIFIED="1466585271685"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Coffee cantata
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="ask" ID="ID_495178510" CREATED="1466585257420" MODIFIED="1466586612586"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Choices:
+    </p>
+    <p>
+      License recording
+    </p>
+    <p>
+      Pay for a recoding
+    </p>
+    <p>
+      Get some s/w
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="David Parry" ID="ID_420122666" CREATED="1466585274884" MODIFIED="1466585282536"/>
+<node TEXT="Alex Smith" ID="ID_1858304092" CREATED="1466585283235" MODIFIED="1466585293128"/>
+<node TEXT="David Harvey" ID="ID_409508249" CREATED="1466585293555" MODIFIED="1466585298232"/>
+<node TEXT="Willus" ID="ID_1422487639" CREATED="1466585335658" MODIFIED="1466585338871"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Fridge" ID="Freemind_Link_1954142386" CREATED="1266488793745" MODIFIED="1266488959040" COLOR="#9679df">
+<icon BUILTIN="desktop_new"/>
+<node TEXT="Memory-based Arrays" ID="ID_1525064537" CREATED="1466155242040" MODIFIED="1466155249093"/>
+<node TEXT="Plotting" ID="ID_1263786393" CREATED="1463978299033" MODIFIED="1463978302382">
+<node TEXT="SharpPlot" ID="ID_655387680" CREATED="1466154827050" MODIFIED="1466154836671"/>
+</node>
+<node TEXT="rank operator" ID="ID_296034646" CREATED="1466581609910" MODIFIED="1466581614035"/>
 </node>
 </node>
 <node TEXT="Record" POSITION="left" ID="Freemind_Link_813012694" CREATED="1266488248876" MODIFIED="1266488728945" COLOR="#27444b">

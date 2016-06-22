@@ -211,14 +211,14 @@ What do you think is the rank of a scalar: a number on its own, like the variabl
 0
 ~~~~~~~~
 
-A scalar has rank zero. Don't worry if that seems a little strange at first; just try to remember it,
+A scalar has _rank zero_. Don't worry if that seems a little strange at first; just try to remember it,
 and don't let it surprise you when you see it again!
-
 
 ## Monadic and Dyadic functions
 
 Like `⍴` , many of APL's symbols have two meanings depending on whether they are used with one argument or two.
-Use with one argument is called _Monadic_, and use with two arguments is called _Dyadic_.
+When you use a function with one argument, you say the function is _Monadic_. When you use a function with two arguments,
+you describe it as _Dyadic_.
 
 For example, the `÷` symbol, used dyadically, means division. Used monadically, it means _reciprocal_.
 (The reciprocal of a number is 1 divided by that number).
