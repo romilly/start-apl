@@ -190,8 +190,8 @@ written that way.
 
 ### What should you comment? The Three AM rule
 
-This advice comes from APL guru Roy Sykes. It's called 'The three AM rule', and it applies to programming in any
-language. Here's how I once heard Roy explain the rule:
+I first heard this tip at a conference many yeas agp. It's called 'The three AM rule', and it applies to programming in
+any language. Here's how I once heard the presenter explain the rule:
 
 > Imagine that you're asleep at home at 3 o'clock in the morning.
 
@@ -199,13 +199,37 @@ language. Here's how I once heard Roy explain the rule:
 
 > You answer it.
 
-> 'Hi Roy. The production system has just fallen over. Can you fix it?'
+> 'Hi there. The production system has just fallen over. Can you fix it?'
 
 > When you take a look at the application, what style of code do you hope you'll see? That's the way _you_ should code.
 
 That's the three AM rule. Write code that you, or other developers, would be relieved to see if they are trying to fix a
 problem at three o'clock in the morning.
 
+If comments would help you or others to read your code at 3 AM, add those comment!
+
+## Catenation
+
+So far you've seen ways of combining vectors based on arithmetic functions.
+
+There's another common way to create new arrays from old: by joining them together.
+
+In APL, a `,` (comma) is the _catenate_ function.
+
+Try it out:
+~~~~~~~~~
+ 1 2 3, 6 5 4
+1 2 3 6 5 4
+      1, 4 7 11
+1 4 7 11
+      5 3 7, 0
+5 3 7 0
+      2 3, 5 6 8
+2 3 5 6 8
+~~~~~~~~~
+
+Ypu can catentate any two vectors, or a vector and a scalar, or a scalar with a vector. Later in the book you will see
+that there are even more possibilities.
 
 ## System commands
 
@@ -247,7 +271,9 @@ file called _course_.
 It's a binary file, so don't try to edit it!
 
 Names are useful. If you are working on more than one project, you can have several workspaces, one for each project.
-Each ahs a name which will help you find the workspace you want to use for any given session.
+Each has a name which will help you find the workspace you want to use for any given session.
+
+## Merging 
 
 ## Finishing your session
 
