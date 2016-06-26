@@ -272,8 +272,41 @@ It's a binary file, so don't try to edit it!
 
 Names are useful. If you are working on more than one project, you can have several workspaces, one for each project.
 Each has a name which will help you find the workspace you want to use for any given session.
+ 
+You can find out all the local workspaces using the )LIB command. Here's what happedned when I ran it:
 
-## Merging 
+~~~~~~~~
+      )lib
+.
+        startapl.dws    
+/opt/mdyalog/15.0/32/unicode/ws
+        apl2in.dws      apl2pcin.dws    buildse.dws     conga.dws       ddb.dws 
+        dfns.dws        display.dws     eval.dws        fonts.dws       ftp.dws 
+        groups.dws      isolate.dws     loaddata.dws    max.dws min.dws ops.dws 
+        postscri.dws    quadna.dws      rconnect.dws    salt.dws        
+        sharpplot.dws   smdemo.dws      smdesign.dws    smtutor.dws     
+        sqapl.dws       tube.dws        tutor.dws       util.dws        
+        xfrcode.dws     xlate.dws       
+/opt/mdyalog/15.0/32/unicode/samples/fun
+        intro.dws       life.dws        sudoku.dws     
+~~~~~~~~
+
+Wow! Lots of workspaces.
+
+The first two lines show that there is a workspace called startapl.dws in the current directory.
+That's a workspace that I saved earlier. It contains the functions and varibales used in this course.
+
+The next line shows that there is a directory called `/opt/mdyalog/15.0/32/unicode/ws` which contains 31 workspaces.
+That directory and the workspaces in it are created by Dyalog during the installation process.
+
+There's also a Dyalog directory called `/opt/mdyalog/15.0/32/unicode/samples/fun` which contains some fun workspaces including
+APL implementations of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) and the game of
+sudoko.
+
+Dyalog's John Scholes has recorded an excellent much-watched [video](http://www.britishaplassociation.co.uk/conways-game-life-apl/)
+showing step-by-step how his APL life implementation works.
+
+
 
 ## Finishing your session
 

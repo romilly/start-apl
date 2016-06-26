@@ -24,6 +24,8 @@ Now you can divide that by 3 (the number of ages)
 
 What if you had a dozen ages? That approach would get rather tedious. Luckily there is an easier way.
 
+## Plus Reduction
+
 First, here is a shortcut for calculating totals.
 
 ~~~~~~~~
@@ -40,7 +42,7 @@ but it would be tedious to count if there were 10, or fifty, or a thousand.
 Here's the quick way to find out.
 
 ~~~~~~~~
-      ⍴ages
+      ⍴ ages
 3
 ~~~~~~~~
 
@@ -100,7 +102,7 @@ The function will work for any number of items.
 5
 ~~~~~~~~
 
-## APL Operators - reduction
+## APL Operators - reduction revisited
 
 This example used reduction. In APL, reduction is defined to be an _operator_.
 An operator takes one or more operands and creates a new function.
@@ -133,11 +135,61 @@ Suppose you have a box of size 2 cm by 3 cm by 6 cm. What is its volume?
 36
 ~~~~~~~~
 
+Reduction turns out to be very useful. To see another use, you need to learn about two more
+of APL's mathematical functions: `⌈` (_max_) and `⌊` (_min_).
+
+Max return the larger of its left and right arguments; min returns the smaller of its arguments. Try them out:
+
+~~~~~~~~
+      2 ⌈ 3
+3
+      2 ⌊ 3
+2
+~~~~~~~~~
+
+What about _max reduction_?
+
+~~~~~~~~
+      ⌈/ 1 4 6 3 9 2 
+9
+~~~~~~~~
+
+Max reduction returns the largest element in a vector. Min reduction returns the smallest element.
+
+~~~~~~~~
+      ⌊/ 1 4 6 3 9 2 
+1
+~~~~~~~~
+
+If you have trouble remembering which is which you could always define amx and min functions like this:
+
+~~~~~~~~
+      max←{⌈/⍵} 
+      min←{⌊/⍵}
+      max 1 4 6 3 9 2 
+9
+      min 1 4 6 3 9 2 
+1
+~~~~~~~~
+
+## Another system command
+
+Earlier you met system commands that you could use to save your workspace, load a saved worksapce, and finish your APL
+session.
+
+Here's another system command:
+
+~~~~~~~~
+      )fns 
+average      max     min
+      ⍝ )fns lists all the functions in the current workspace     
+~~~~~~~~
+
 ## Matrices
 
 So far you've met vectors and scalars. One of APL's great strengths is that it can handle arrays of higher dimension.
 
-You've probably met _matrices_ (arrays with two axes); you may have met _tensors_ (arrays with three or more axes).
+You've probably met _matrices_ (arrays with two axes) and you may have met _tensors_ (arrays with three or more axes).
 APL handles them all with ease.
 
 You can create a matrix using the _reshape_ function.
@@ -186,6 +238,8 @@ You can create multi-dimensional arrays just as easily.
 ~~~~~~~~
 
 As you can see, APL displays a 3-axis array one plane at a time with a blank row between them.
+
+## Rank
 
 How can you find out how many axes an APL array has? Use `⍴⍴`, called _rank_.
 

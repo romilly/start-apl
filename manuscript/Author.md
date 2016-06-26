@@ -8,8 +8,8 @@ For two decades helped to run Cocking and Drury, a software house that specialis
 
 Romilly is currently engaged in Robotics and AI research using APL as the implementation language.
 
-You can contact him at romilly.cocking@gmail.com or follow him on twitter @rareblog
+You can contact him at romilly.cocking@gmail.com or follow him on twitter as [@rareblog](http://twitter.com/rareblog)
 
-You can read his RAREBlog [here](http://blog.rareschool.com/)
+You can read his blog [here](http://blog.rareschool.com/)
 
 ![Romilly Cocking](images/rom.jpg)
