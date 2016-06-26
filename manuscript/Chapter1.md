@@ -159,6 +159,7 @@ Mathematicians call vectors like that _arithmetic progressions_, and you way wel
 APL has a particularly easy way to create them, using the `⍳` function.
 
 Here are a some examples of its use:
+
 ~~~~~~~~
       ⍳3
 1 2 3
