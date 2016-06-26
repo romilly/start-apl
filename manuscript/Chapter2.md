@@ -161,7 +161,7 @@ Max reduction returns the largest element in a vector. Min reduction returns the
 1
 ~~~~~~~~
 
-If you have trouble remembering which is which you could always define amx and min functions like this:
+If you have trouble remembering which is which you could always define max and min functions like this:
 
 ~~~~~~~~
       max←{⌈/⍵} 

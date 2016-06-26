@@ -217,6 +217,7 @@ There's another common way to create new arrays from old: by joining them togeth
 In APL, a `,` (comma) is the _catenate_ function.
 
 Try it out:
+
 ~~~~~~~~~
  1 2 3, 6 5 4
 1 2 3 6 5 4
@@ -228,7 +229,7 @@ Try it out:
 2 3 5 6 8
 ~~~~~~~~~
 
-Ypu can catentate any two vectors, or a vector and a scalar, or a scalar with a vector. Later in the book you will see
+Ypu can catenate any two vectors, or a vector and a scalar, or a scalar with a vector. Later in the book you will see
 that there are even more possibilities.
 
 ## System commands
@@ -273,7 +274,7 @@ It's a binary file, so don't try to edit it!
 Names are useful. If you are working on more than one project, you can have several workspaces, one for each project.
 Each has a name which will help you find the workspace you want to use for any given session.
  
-You can find out all the local workspaces using the )LIB command. Here's what happedned when I ran it:
+You can find out all the local workspaces using the )LIB command. Here's what happened when I ran it:
 
 ~~~~~~~~
       )lib
@@ -301,12 +302,7 @@ That directory and the workspaces in it are created by Dyalog during the install
 
 There's also a Dyalog directory called `/opt/mdyalog/15.0/32/unicode/samples/fun` which contains some fun workspaces including
 APL implementations of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) and the game of
-sudoko.
-
-Dyalog's John Scholes has recorded an excellent much-watched [video](http://www.britishaplassociation.co.uk/conways-game-life-apl/)
-showing step-by-step how his APL life implementation works.
-
-
+sudoku.
 
 ## Finishing your session
 
