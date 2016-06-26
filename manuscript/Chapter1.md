@@ -218,8 +218,8 @@ In APL, a `,` (comma) is the _catenate_ function.
 
 Try it out:
 
-~~~~~~~~~
- 1 2 3, 6 5 4
+~~~~~~~~
+      1 2 3, 6 5 4
 1 2 3 6 5 4
       1, 4 7 11
 1 4 7 11
@@ -227,7 +227,7 @@ Try it out:
 5 3 7 0
       2 3, 5 6 8
 2 3 5 6 8
-~~~~~~~~~
+~~~~~~~~
 
 Ypu can catenate any two vectors, or a vector and a scalar, or a scalar with a vector. Later in the book you will see
 that there are even more possibilities.
