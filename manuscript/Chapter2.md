@@ -284,3 +284,42 @@ For example, the `÷` symbol, used dyadically, means division. Used monadically,
 0.5
 ~~~~~~~~
 
+Other functions also have diiferent uses when used monadically.
+
+You've seen the dyadic use of `,` to catenate two vectors together.
+
+Monadic `,` is called _ravel_ (pronounced with the stress on the first syllable). Ravel turns any array into a vector
+by listing the elements of the array one after another.
+
+~~~~~~~~
+      mat ← 2 3⍴⍳6
+      mat
+1 2 3
+4 5 6
+      ,mat
+1 2 3 4 5 6
+~~~~~~~~
+
+Monadic `⌈` is called _ceiling_. It rounds each element of its argument up to the nearest integer.
+If the argument is already an integer it is unchanged.
+
+~~~~~~~~
+      ⌈ 1.4 1.6 2 ¯1.3 1.7 ¯0.5 3
+2 2 2 ¯1 2 0 3
+~~~~~~~~
+
+Can you guess what `⌊` does, and what it's called?
+
+Try an experiment:
+
+~~~~~~~~
+      ⌊ 1.4 1.6 2 ¯1.3 1.7 ¯0.5 3
+1 1 2 ¯2 1 ¯1 3
+~~~~~~~~
+
+`⌊` is called _floor_. It rounds each element of its argument down to the nearest integer.
+If the argument is already an integer it is unchanged.
+
+
+
+
