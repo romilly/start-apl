@@ -4,7 +4,7 @@ Romilly Cocking has been using APL to solve problems since 1974.
 
 He founded the British APL Association (then called the UK APL user group) in 1976.
 
-For two decades helped to run Cocking and Drury, a software house that specialised in APL.
+For two decades he helped to run Cocking and Drury, a software house that specialised in APL.
 
 Romilly is currently engaged in Robotics and AI research using APL as the implementation language.
 

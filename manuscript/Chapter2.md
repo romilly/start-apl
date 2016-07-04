@@ -170,6 +170,12 @@ If you have trouble remembering which is which you could always define max and m
 9
       min 1 4 6 3 9 2 
 1
+      ages
+12 23 19
+      max ages ⍝ how old is the oldest?
+23
+      min ages ⍝ how old is the youngest?
+12
 ~~~~~~~~
 
 ## Another system command
@@ -288,7 +294,8 @@ Other functions also have diiferent uses when used monadically.
 
 You've seen the dyadic use of `,` to catenate two vectors together.
 
-Monadic `,` is called _ravel_ (pronounced with the stress on the first syllable). Ravel turns any array into a vector
+Monadic `,` is called _ravel_ (pronounced with the stress on the first
+syllable). Ravel turns any array into a vector
 by listing the elements of the array one after another.
 
 ~~~~~~~~
@@ -300,8 +307,9 @@ by listing the elements of the array one after another.
 1 2 3 4 5 6
 ~~~~~~~~
 
-Monadic `⌈` is called _ceiling_. It rounds each element of its argument up to the nearest integer.
-If the argument is already an integer it is unchanged.
+Monadic `⌈` is called _ceiling_. It rounds each element of its argument
+up to the nearest integer. If the argument is already an integer it is
+unchanged.
 
 ~~~~~~~~
       ⌈ 1.4 1.6 2 ¯1.3 1.7 ¯0.5 3
@@ -319,6 +327,96 @@ Try an experiment:
 
 `⌊` is called _floor_. It rounds each element of its argument down to the nearest integer.
 If the argument is already an integer it is unchanged.
+
+# Indexing
+
+Once you'ver created an array you often want to select items from it.
+
+Most computer languages let you do this by _indexing_ the array, and APL
+is no exception. However, indexing in APL is aprticularly powerful.
+
+You can select items of an array using indices within square brackts [].
+
+Try these examples:
+
+~~~~~~~~
+      ages
+12 23 19
+      ages[1]
+12
+      ages[2 3]
+23 19
+      ages[2 1 3 2 3 1]
+23 12 19 23 19 12
+~~~~~~~~
+
+As you can see, APl lets you select as many items as you like, as many
+times as you like.
+
+What happens if you use a matrix of indices?
+
+~~~~~~~~
+      ages[2 3⍴2 1 3 2 3 1]
+23 12 19
+23 19 12
+~~~~~~~~
+
+You get a matrix result!
+
+When you select items from a vector, the shape of the result is the same
+as the shape of the array of indices.
+
+What happens if you try to index an array using an index that's
+outside the array?
+
+~~~~~~~~
+      ages[7]
+INDEX ERROR
+      ages[7]
+     ∧
+~~~~~~~~
+
+You get an _index error_. The same thing would happen if you used a zero,
+negative or non-integer index.
+
+## Indexing items from matrices
+
+Imagine that you have a table of quarterly sales for each of three
+products.
+
+You might create it like this:
+
+~~~~~~~~
+      sales ← 3 4 ⍴ 10 11 13 15 8 10 11 14 9 8 12 13
+      sales
+10 11 13 15
+ 8 10 11 14
+ 9  8 12 13
+~~~~~~~~
+
+How can you select _all_ the sales for product number 1?
+
+~~~~~~~~
+      sales[1;1 2 3 4] ⍝ select all of the first row
+10 11 13 15
+~~~~~~~~
+
+To select items from a two-dimensional matrix, you must specify which
+row(s) and which column(s) you want.
+
+In the example above, you want row number 1 and all the columns.
+
+There's a useful shorthand iy you want all the columns in a given row:
+
+~~~~~~~~
+      sales[1;]
+10 11 13 15
+~~~~~~~~
+
+If you leave out the column indices, APL assumes that you want them all.
+
+
+
 
 
 

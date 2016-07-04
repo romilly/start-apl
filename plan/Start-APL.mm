@@ -1,6 +1,23 @@
 <map version="freeplane 1.3.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="Learn APL on the Raspberry Pi" ID="Freemind_Link_1331878192" CREATED="1266488194781" MODIFIED="1463921408899"><hook NAME="MapStyle">
+<node ID="Freemind_Link_1331878192" CREATED="1266488194781" MODIFIED="1467623254281"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="text-align: center">
+      Learn APL on
+    </p>
+    <p style="text-align: center">
+      the Raspberry Pi
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<hook NAME="MapStyle">
     <properties show_note_icons="true"/>
 
 <map_styles>
@@ -163,9 +180,19 @@
 <node TEXT="&#x230a;" ID="ID_738869711" CREATED="1466960183459" MODIFIED="1467027042518"/>
 </node>
 </node>
+<node TEXT="indexing" ID="ID_135937942" CREATED="1466154875353" MODIFIED="1466669065751" BACKGROUND_COLOR="#ffff00">
+<node TEXT="picking items from a vector" ID="ID_1022256700" CREATED="1467621003259" MODIFIED="1467621010807"/>
+<node TEXT="arrays of indices" ID="ID_1759705466" CREATED="1467621016467" MODIFIED="1467621038807"/>
+<node TEXT="indexing matrices" ID="ID_778480392" CREATED="1467621052147" MODIFIED="1467621060304"/>
+<node TEXT="indexed assignment" ID="ID_1443090393" CREATED="1467621065475" MODIFIED="1467621070616"/>
+<node TEXT="other forms of selecting items" ID="ID_1520641896" CREATED="1467621071298" MODIFIED="1467621111881">
+<node TEXT="some covered" ID="ID_1718858523" CREATED="1467621112786" MODIFIED="1467621115921"/>
+<node TEXT="some not" ID="ID_221055477" CREATED="1467621116306" MODIFIED="1467621119175"/>
+</node>
+</node>
+<node TEXT="Exercises" ID="ID_732483441" CREATED="1467611909569" MODIFIED="1467611957851" BACKGROUND_COLOR="#ffff00"/>
 </node>
 <node TEXT="Chapter 3" ID="ID_1394219403" CREATED="1463978233601" MODIFIED="1466155104166">
-<node TEXT="indexing" ID="ID_135937942" CREATED="1466154875353" MODIFIED="1466669065751" BACKGROUND_COLOR="#ffff00"/>
 <node TEXT="Character data" ID="ID_1375892168" CREATED="1463978248585" MODIFIED="1466669052504" BACKGROUND_COLOR="#ffff00"/>
 <node TEXT="more catenation" ID="ID_1401444243" CREATED="1466575981509" MODIFIED="1467026608002" BACKGROUND_COLOR="#ffff00">
 <node TEXT="character" ID="ID_1557727876" CREATED="1466576004700" MODIFIED="1466576009785"/>
@@ -271,7 +298,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="sign up!" ID="ID_1464505288" CREATED="1466409731052" MODIFIED="1466409734752"/>
 </node>
@@ -290,6 +316,10 @@
 <node TEXT="check with Steve F about moving kbd stuff to a separate pdf" ID="ID_1546923811" CREATED="1466156281766" MODIFIED="1466156301650"/>
 <node TEXT="check what constructs are needed for this year&apos;s competition" ID="ID_1278394091" CREATED="1466156341380" MODIFIED="1466156368889"/>
 <node TEXT="add items to Ch 1" ID="ID_372794695" CREATED="1466501346841" MODIFIED="1466501352070"/>
+<node TEXT="add hints about learnming more as you go" ID="ID_1160325488" CREATED="1467621141579" MODIFIED="1467621178952">
+<node TEXT="tips in RIDE" ID="ID_560733965" CREATED="1467621179994" MODIFIED="1467621189592"/>
+<node TEXT="documentation" ID="ID_1252555769" CREATED="1467621190186" MODIFIED="1467621194616"/>
+</node>
 </node>
 <node TEXT="Write 1st chapter" ID="ID_1133750923" CREATED="1463921153074" MODIFIED="1466157461086">
 <icon BUILTIN="button_ok"/>
@@ -304,7 +334,8 @@
 <node TEXT="check results in text" ID="ID_873655744" CREATED="1463921689476" MODIFIED="1463921706465"/>
 <node TEXT="document use of pandoc + APL fonts to create local PDFs" ID="ID_373468695" CREATED="1465811175798" MODIFIED="1465811204900"/>
 </node>
-<node TEXT="Cover" ID="ID_1471963712" CREATED="1463922261470" MODIFIED="1463922268099">
+<node TEXT="Cover" ID="ID_1471963712" CREATED="1463922261470" MODIFIED="1467621130638">
+<icon BUILTIN="button_ok"/>
 <node TEXT="fiverr lady" ID="ID_934371396" CREATED="1467541428848" MODIFIED="1467541436363">
 <icon BUILTIN="button_ok"/>
 </node>
@@ -325,6 +356,7 @@
 </node>
 <node TEXT="Promotion" ID="ID_717702127" CREATED="1465898774090" MODIFIED="1465898790183"/>
 <node TEXT="Follow-up" ID="ID_1184691599" CREATED="1465898779466" MODIFIED="1465898784423"/>
+<node TEXT="enrich egs with meaningful examples" ID="ID_323074700" CREATED="1467611928335" MODIFIED="1467611940219"/>
 </node>
 <node TEXT="Review" POSITION="left" ID="Freemind_Link_1153466861" CREATED="1266488259116" MODIFIED="1266488895851" COLOR="#fb1802">
 <icon BUILTIN="xmag"/>
