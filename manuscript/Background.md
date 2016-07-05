@@ -2,7 +2,7 @@
 
 This is an extract from a new Introductory book on APL. It features
 Dyalog's free implementation on the Raspberry Pi, but you can also use
-it if you are learning Dyalog APL on the 
+it if you are learning Dyalog APL on Windows, OS/X or other Linux systems.
 
 I hope it will motivate you to take a look at this powerful language and
 help you to get started.
