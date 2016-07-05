@@ -415,6 +415,54 @@ There's a useful shorthand iy you want all the columns in a given row:
 
 If you leave out the column indices, APL assumes that you want them all.
 
+How can you select the column of the matrix constaining sales
+for Quarter two?
+
+~~~~~~~~
+      sales[;2]
+11 10 8
+~~~~~~~~
+
+You select _rows_ (corresponding to the _first_ axis of the array) by
+specifying indices _before_ the semi-colon within the index brackets.
+
+You specify _columns_ (corresponding to the _second_ axis of the array) by
+specifying indices _after_ the semi-colon within the index brackets.
+
+How about arrays of higher rank?
+
+Three-dimensional arrays are useful. If you're managing a business which sells
+products in several countries you might have a three-dimensional array
+showing international sales by product, by country and by month.
+
+If you have thre products, two countries and sales figures for four
+quarters your array would have shape 3 2 4.
+
+
+You can create such an aray like this:
+
+~~~~~~~~
+      international_sales ← 3 2 4⍴ 7 4 6 8 7 6 6 9 8 5 5 4 7 4 6 8 6 7 6 5 7 4 6 9
+      international_sales
+7 4 6 8
+7 6 6 9
+       
+8 5 5 4
+7 4 6 8
+       
+6 7 6 5
+7 4 6 9
+~~~~~~~~
+
+The array has three planes, one for each product. Each row corresponds to
+a country. Each column corresponds to a quarter.
+
+
+
+
+
+
+
 
 
 

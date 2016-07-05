@@ -11,8 +11,8 @@ You should read this book if you want to
 
 The book is written for people learning Dyalog APL.
  
-You can run Dyalog APL on a Raspberry Pi for free. There are also free educational and low-cost personal licenses
-available for Windows, other Linux computers and OS/X. You'll find more information in the Appendices and on the
+You can run Dyalog APL on a Raspberry Pi for free. There are also free educational and personal licenses
+available for Windows, other Linux computers and OS/X. You'll find more information on the
 [Dyalg APL website](http://www.dyalog.com/)
 
 ## Early access

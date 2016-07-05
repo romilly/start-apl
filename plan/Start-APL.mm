@@ -15,7 +15,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <hook NAME="MapStyle">
     <properties show_note_icons="true"/>
@@ -69,11 +68,12 @@
 </hook>
 <node TEXT="Goal" POSITION="right" ID="Freemind_Link_1242386705" CREATED="1266488217621" MODIFIED="1266488568255" COLOR="#37a3cb">
 <node TEXT="Intro APL book" ID="ID_968474777" CREATED="1463921119275" MODIFIED="1463921125048"/>
-<node TEXT="on LeanPub today!" ID="ID_457018322" CREATED="1463921126627" MODIFIED="1463921135424"/>
+<node TEXT="on LeanPub today!" ID="ID_457018322" CREATED="1463921126627" MODIFIED="1467635091183">
+<icon BUILTIN="button_ok"/>
+</node>
 </node>
 <node TEXT="Plan" POSITION="right" ID="_" CREATED="1266488212530" MODIFIED="1266488546784" COLOR="#373dcb">
 <edge COLOR="#808080"/>
-<node TEXT="Map it" ID="ID_704796578" CREATED="1463921137746" MODIFIED="1463921140800">
 <node TEXT="Introduction" ID="ID_1652922988" CREATED="1463921356236" MODIFIED="1463921359986">
 <node TEXT="Why APL?" ID="ID_1232494562" CREATED="1463921367060" MODIFIED="1463922638603"/>
 <node TEXT="Try APL" ID="ID_1084515102" CREATED="1463921370412" MODIFIED="1463921373073"/>
@@ -181,8 +181,12 @@
 </node>
 </node>
 <node TEXT="indexing" ID="ID_135937942" CREATED="1466154875353" MODIFIED="1466669065751" BACKGROUND_COLOR="#ffff00">
-<node TEXT="picking items from a vector" ID="ID_1022256700" CREATED="1467621003259" MODIFIED="1467621010807"/>
-<node TEXT="arrays of indices" ID="ID_1759705466" CREATED="1467621016467" MODIFIED="1467621038807"/>
+<node TEXT="picking items from a vector" ID="ID_1022256700" CREATED="1467621003259" MODIFIED="1467696984822">
+<icon BUILTIN="button_ok"/>
+</node>
+<node TEXT="arrays of indices" ID="ID_1759705466" CREATED="1467621016467" MODIFIED="1467696987970">
+<icon BUILTIN="button_ok"/>
+</node>
 <node TEXT="indexing matrices" ID="ID_778480392" CREATED="1467621052147" MODIFIED="1467621060304"/>
 <node TEXT="indexed assignment" ID="ID_1443090393" CREATED="1467621065475" MODIFIED="1467621070616"/>
 <node TEXT="other forms of selecting items" ID="ID_1520641896" CREATED="1467621071298" MODIFIED="1467621111881">
@@ -310,7 +314,6 @@
 </node>
 </node>
 </node>
-</node>
 <node TEXT="Tasks" POSITION="right" ID="Freemind_Link_857865306" CREATED="1266488223477" MODIFIED="1266488636684" COLOR="#de5613">
 <node TEXT="tidying up" ID="ID_375663329" CREATED="1466157436769" MODIFIED="1466157446926">
 <node TEXT="check with Steve F about moving kbd stuff to a separate pdf" ID="ID_1546923811" CREATED="1466156281766" MODIFIED="1466156301650"/>
@@ -367,7 +370,9 @@
 <icon BUILTIN="button_cancel"/>
 <node TEXT="title competition" ID="ID_101420733" CREATED="1467541466336" MODIFIED="1467541471685">
 <node TEXT="cute" ID="ID_1081431878" CREATED="1467541473088" MODIFIED="1467541476373"/>
-<node TEXT="borrow Drayton Bird post for future use" ID="ID_1162076389" CREATED="1467541479272" MODIFIED="1467541520404"/>
+<node TEXT="borrow Drayton Bird post for future use" ID="ID_1162076389" CREATED="1467541479272" MODIFIED="1467697772677">
+<icon BUILTIN="button_ok"/>
+</node>
 </node>
 </node>
 <node TEXT="WDD" ID="Freemind_Link_1294877740" CREATED="1266488984697" MODIFIED="1296303577864" COLOR="#00cc00">
@@ -375,6 +380,7 @@
 </node>
 <node TEXT="Questions" ID="Freemind_Link_1003502265" CREATED="1266489024048" MODIFIED="1296303570801" COLOR="#00cccc">
 <icon BUILTIN="help"/>
+<node TEXT="how much shoudl I say about the libraries?" ID="ID_1022817637" CREATED="1467697731595" MODIFIED="1467697750223"/>
 </node>
 <node TEXT="Surprises" ID="Freemind_Link_19217072" CREATED="1266489032944" MODIFIED="1296303119998" COLOR="#ff0000" BACKGROUND_COLOR="#ffff00">
 <icon BUILTIN="messagebox_warning"/>
@@ -384,7 +390,7 @@
 </node>
 <node TEXT="Ideas" ID="Freemind_Link_1517433488" CREATED="1266488273147" MODIFIED="1266488921179" COLOR="#36d12a">
 <icon BUILTIN="idea"/>
-<node TEXT="APL checker" ID="ID_1665709478" CREATED="1466574867588" MODIFIED="1466575112484"><richcontent TYPE="NOTE">
+<node TEXT="APL checker" ID="ID_1665709478" CREATED="1466574867588" MODIFIED="1467697880647"><richcontent TYPE="NOTE">
 
 <html>
   <head>
@@ -398,10 +404,11 @@
       Check it executes.
     </p>
     <p>
-      Save it as a demo file.
+      Save the executable bits as a demo file.
     </p>
   </body>
 </html>
+
 </richcontent>
 </node>
 <node TEXT="Why programmers are often off-by-one, and how you can avoid the problem" ID="ID_1721503280" CREATED="1466576605605" MODIFIED="1466577292599">
@@ -477,6 +484,7 @@
 </node>
 <node TEXT="Tradfns" ID="ID_1507195152" CREATED="1467543004689" MODIFIED="1467543015821"/>
 <node TEXT="Classes" ID="ID_61240682" CREATED="1467543008192" MODIFIED="1467543011252"/>
+<node TEXT="complex numbers" ID="ID_1754806988" CREATED="1467635070369" MODIFIED="1467635076022"/>
 </node>
 </node>
 </node>
