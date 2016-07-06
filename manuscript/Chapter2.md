@@ -145,7 +145,8 @@ Max return the larger of its left and right arguments; min returns the smaller o
 3
       2 ⌊ 3
 2
-~~~~~~~~~
+~~~~~~~~
+
 
 What about _max reduction_?
 
@@ -180,7 +181,7 @@ If you have trouble remembering which is which you could always define max and m
 
 ## Another system command
 
-Earlier you met system commands that you could use to save your workspace, load a saved worksapce, and finish your APL
+Earlier you met system commands that you could use to save your workspace, load a saved workspace, and finish your APL
 session.
 
 Here's another system command:
@@ -290,7 +291,7 @@ For example, the `÷` symbol, used dyadically, means division. Used monadically,
 0.5
 ~~~~~~~~
 
-Other functions also have diiferent uses when used monadically.
+Other functions also have different uses when used monadically.
 
 You've seen the dyadic use of `,` to catenate two vectors together.
 
@@ -333,9 +334,9 @@ If the argument is already an integer it is unchanged.
 Once you'ver created an array you often want to select items from it.
 
 Most computer languages let you do this by _indexing_ the array, and APL
-is no exception. However, indexing in APL is aprticularly powerful.
+is no exception. However, indexing in APL is particularly powerful.
 
-You can select items of an array using indices within square brackts [].
+You can select items of an array using indices within square brackets [].
 
 Try these examples:
 
@@ -415,7 +416,7 @@ There's a useful shorthand iy you want all the columns in a given row:
 
 If you leave out the column indices, APL assumes that you want them all.
 
-How can you select the column of the matrix constaining sales
+How can you select the column of the matrix containing sales
 for Quarter two?
 
 ~~~~~~~~
@@ -435,11 +436,11 @@ Three-dimensional arrays are useful. If you're managing a business which sells
 products in several countries you might have a three-dimensional array
 showing international sales by product, by country and by month.
 
-If you have thre products, two countries and sales figures for four
+If you have three products, two countries and sales figures for four
 quarters your array would have shape 3 2 4.
 
 
-You can create such an aray like this:
+You can create such an array like this:
 
 ~~~~~~~~
       international_sales ← 3 2 4⍴ 7 4 6 8 7 6 6 9 8 5 5 4 7 4 6 8 6 7 6 5 7 4 6 9
@@ -454,8 +455,97 @@ You can create such an aray like this:
 7 4 6 9
 ~~~~~~~~
 
-The array has three planes, one for each product. Each row corresponds to
-a country. Each column corresponds to a quarter.
+The array has three planes, one for each product.
+
+Each row corresponds to a country.
+
+Each column corresponds to a quarter.
+
+What are the sales for the first product?
+
+~~~~~~~~
+      international_sales[1;;]
+7 4 6 8
+7 6 6 9
+~~~~~~~~
+
+What are the sales for the second country?
+
+~~~~~~~~
+      international_sales[;2;]
+7 6 6 9
+7 4 6 8
+7 4 6 9
+~~~~~~~~
+
+What are the sales for the first and last quarter?
+
+~~~~~~~~
+      international_sales[;;1 4]
+7 8
+7 9
+   
+8 4
+7 8
+   
+6 5
+7 9
+~~~~~~~~
+
+As you can see, indexing in APL is very powerful.
+
+It's not the only way of selecting data, though. We'll meet some of the 
+other techniques later in this book.
+
+## Indexed assignment
+
+Indexing in APL is not just used for _selecting_ data from an array;
+you can also use it to _update_ data in an array.
+
+Recall the vector of ages that you used earlier.
+
+~~~~~~~~
+      ages
+12 23 19
+~~~~~~~~
+
+Imagine that the second person in that vector of ages has just had a
+birthday. You can change that age to 30 like this:
+
+~~~~~~~~
+      ages[2]←30
+      ages
+12 30 19
+~~~~~~~~
+
+When you type an indexed expression to the right of an assignment arrow
+it's called _indexed assignment_.
+
+You can do indexed assignment on any array, not just a vector.
+
+You need to create an array of new values that matches size of the 'hole'
+you create by indexing. Here's a matrix example for you to try:
+
+~~~~~~~~
+      sales
+10 11 13 15
+ 8 10 11 14
+ 9  8 12 13
+      sales[1 3; 2 3 4 ] ← 2 3⍴9 12 16 6 10 18
+      sales
+10  9 12 16
+ 8 10 11 14
+ 9  6 10 18
+~~~~~~~~
+
+Here's what is going on:
+
+
+![Indexed Assignment](images/sales.png)
+
+
+
+
 
 
 
