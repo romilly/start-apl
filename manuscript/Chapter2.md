@@ -540,8 +540,17 @@ you create by indexing. Here's a matrix example for you to try:
 
 Here's what is going on:
 
+<!-- TODO: Improve the visual -->
 
 ![Indexed Assignment](images/sales.png)
+
+## Exercises
+
+Here's a chance to consolidate your knowledge.
+
+TBD.
+
+<!-- TODO: Add exercises -->
 
 
 
