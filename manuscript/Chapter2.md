@@ -107,7 +107,7 @@ The function will work for any number of items.
 This example used reduction. In APL, reduction is defined to be an _operator_.
 An operator takes one or more operands and creates a new function.
 
-A _function_ (like +, -, and ⍴, among many others) takes one or two array arguments and returns an array result.
+A _function_ (like `+`, `-`, and `⍴`, among many others) takes one or two array arguments and returns an array result.
 
 In _plus reduction_, the operator / takes + (the add function) and turns it into a new function, _sum_.
 
