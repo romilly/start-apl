@@ -1,5 +1,7 @@
 Introduction.md
 Chapter1.md
+Chapter2.md
+Chapter3.md
 Appendix1.md
 Appendix2.md
-Appendix3.md
+Author.md

@@ -4,7 +4,7 @@
 
 Time to start APL - and start learning!
 
-To begin your first APL session on a Raspberry Pi, run __Dyalog__ from the __Programming__ menu.
+To begin your first APL session on a Raspberry Pi, run _Dyalog_ from the _Programming_ menu.
 
 (If you're using RIDE to connect to a Raspberry Pi or some other computer with APL installed, follow the
 instructions in Appendix 2 - once I've written them!)
@@ -17,7 +17,7 @@ The APL environment includes a
 That means that you can write code and try it out right away. That's a great way to learn a lanugage,
 and it's also a great way to develop software.
 
-In the examples that follow, code that __you__ type is indented by six spaces. Once you start your session
+In the examples that follow, code that _you_ type is indented by six spaces. Once you start your session
 you'll see that APL inserts those spaces for you when it's your turn to type.
 
 APL's output is **not** indented, so you can see what you should type and what you should expect APL to output.
@@ -39,11 +39,11 @@ Try some more:
 ¯1
 ~~~~~~~~
 
-Note how APL represents negative numbers using a `¯` symbol. The `¯` (called __high minus__) is part of the way you
-write the value __negative one__. That's different from the - symbol (called __minus__) which tells APL to do a
+Note how APL represents negative numbers using a `¯` symbol. The `¯` (called _high minus_) is part of the way you
+write the value _negative one_. That's different from the - symbol (called _minus_) which tells APL to do a
 subtraction.
 
-Plus and minus are __primitive functions__ in APL. What about multiply and divide? Of course APL does those too.
+Plus and minus are _primitive functions_ in APL. What about multiply and divide? Of course APL does those too.
 
 APL uses the same symbols that I was taught at school: `×` for multiply, and `÷` for divide.
 
@@ -79,7 +79,9 @@ Now for something rather different. Try the experiment below,
 
 What's going on?
 
-APL treat the two lists of numbers as __vectors__ and it adds the corresponding elements together.
+## Array programming without explicit loops
+
+APL treat the two lists of numbers as _vectors_ and it adds the corresponding elements together.
 
 A lot of calculations need to be done on vectors, and APL's built-in looping makes this really easy.
 
@@ -104,8 +106,8 @@ That last example works, but it's a bit tedious to type. Fortunately there is an
 ~~~~~~~~
 
 If you ask APL to multiply (or add, or subtract, or divide) a number on its own and a vector of numbers, APL will use the
-single number repeatedly. A single number on its own is called a __scalar__. The repeated use of a scalar when you're
-adding it to a vector is called __scalar extension__.
+single number repeatedly. A single number on its own is called a _scalar_. The repeated use of a scalar when you're
+adding it to a vector is called _scalar extension_.
  
 What happens if you try to add two vectors of different lengths?
 
@@ -131,7 +133,7 @@ tell APl to remember values you want to use repeatedly. Suppose you are currentl
 33
 ~~~~~~~~
 
-The first line you typed told APL to assign the value 23 to a new variable __age__.
+The first line you typed told APL to assign the value 23 to a new variable _age_.
 
 In the second line you asked APL to add 10 to your current age, and APL displayed the result.
 
@@ -148,11 +150,94 @@ APL variables can contain vectors as well as scalars.
 
 ~~~~~~~~
 
+## A shortcut to counting
+
+In one of the earlier examples you added the vector 1 2 3 to the vector 4 5 6.
+
+Mathematicians call vectors like that _arithmetic progressions_, and you way well need to use them in your software.
+
+APL has a particularly easy way to create them, using the `⍳` function.
+
+Here are a some examples of its use:
+
+~~~~~~~~
+      ⍳3
+1 2 3
+      3 + ⍳3
+4 5 6
+      (⍳3) + 3 + ⍳3
+5 7 9
+      2 × ⍳5
+2 4 6 8 10
+~~~~~~~~
+
+I> By default APL starts counting at one. In Chapter 6 you will see a way to get APL to start counting at zere. Some
+programs are simpler when written that way.
+
+## Illuminate your code - use comments
+
+As you get more experienced in APL programming the code you write will get more complex.
+
+Most code is read more often than it is written, so you should consider documenting it using _comments_.
+
+The APL symbol for a comment is `⍝` - often called _lamp_ because it's intended to illuminate your code.
+
+Whenever the APl interpreter encounters a comment it ignores the rest of that line. You'll find two styles of comment
+widely used in APL code.
+
+1. A stand-alone comment starts with a lamp symbol. That means tha nothing on that line will get executed.
+1. An in-line comment follows some executable code on the same line. It explains what the code does or why it is
+written that way.
+
+### What should you comment? The Three AM rule
+
+I first heard this tip at a conference many yeas agp. It's called 'The three AM rule', and it applies to programming in
+any language. Here's how I once heard the presenter explain the rule:
+
+> Imagine that you're asleep at home at 3 o'clock in the morning.
+
+> The phone rings. And rings. And rings.
+
+> You answer it.
+
+> 'Hi there. The production system has just fallen over. Can you fix it?'
+
+> When you take a look at the application, what style of code do you hope you'll see? That's the way _you_ should code.
+
+That's the three AM rule. Write code that you, or other developers, would be relieved to see if they are trying to fix a
+problem at three o'clock in the morning.
+
+If comments would help you or others to read your code at 3 AM, add those comment!
+
+## Catenation
+
+So far you've seen ways of combining vectors based on arithmetic functions.
+
+There's another common way to create new arrays from old: by joining them together.
+
+In APL, a `,` (comma) is the _catenate_ function.
+
+Try it out:
+
+~~~~~~~~
+      1 2 3, 6 5 4
+1 2 3 6 5 4
+      1, 4 7 11
+1 4 7 11
+      5 3 7, 0
+5 3 7 0
+      2 3, 5 6 8
+2 3 5 6 8
+~~~~~~~~
+
+Ypu can catenate any two vectors, or a vector and a scalar, or a scalar with a vector. Later in the book you will see
+that there are even more possibilities.
+
 ## System commands
 
 If you've been working on an APL session for a while it can be useful to check what variables you have created.
 
-APl has a __system command__ to do that. System commands in APL don't create values, but they do other useful things.
+APl has a _system command_ to do that. System commands in APL don't create values, but they do other useful things.
 One such command will tell you the names of all the variables you have defined. Try it out:
 
 ~~~~~~~~
@@ -160,10 +245,10 @@ One such command will tell you the names of all the variables you have defined. 
 age ages
 ~~~~~~~~
 
-In APL, system commands start with an open right bracket. The __vars__ command tells you the name of the variables that
+In APL, system commands start with an open right bracket. The _vars_ command tells you the name of the variables that
 are currently defined.
 
-When you work in an APL session, the variables you create are held in what APL calls the __current workspace__.
+When you work in an APL session, the variables you create are held in what APL calls the _current workspace_.
 
 A workspace can also contain functions and other things. We'll cover these later in this book.
 
@@ -183,12 +268,42 @@ The first command gave a name to your workspace. (Previously it had no name, so 
 workspace.
 
 Then you asked APL to save your workspace. It stored it on disk. If you look in your home directory, you should see a
-file called __course__.
+file called _course_.
 
 It's a binary file, so don't try to edit it!
 
 Names are useful. If you are working on more than one project, you can have several workspaces, one for each project.
-Each ahs a name which will help you find the workspace you want to use for any given session.
+Each has a name which will help you find the workspace you want to use for any given session.
+ 
+You can find out all the local workspaces using the )LIB command. Here's what happened when I ran it:
+
+~~~~~~~~
+      )lib
+.
+        startapl.dws    
+/opt/mdyalog/15.0/32/unicode/ws
+        apl2in.dws      apl2pcin.dws    buildse.dws     conga.dws       ddb.dws 
+        dfns.dws        display.dws     eval.dws        fonts.dws       ftp.dws 
+        groups.dws      isolate.dws     loaddata.dws    max.dws min.dws ops.dws 
+        postscri.dws    quadna.dws      rconnect.dws    salt.dws        
+        sharpplot.dws   smdemo.dws      smdesign.dws    smtutor.dws     
+        sqapl.dws       tube.dws        tutor.dws       util.dws        
+        xfrcode.dws     xlate.dws       
+/opt/mdyalog/15.0/32/unicode/samples/fun
+        intro.dws       life.dws        sudoku.dws     
+~~~~~~~~
+
+Wow! Lots of workspaces.
+
+The first two lines show that there is a workspace called startapl.dws in the current directory.
+That's a workspace that I saved earlier. It contains the functions and varibales used in this course.
+
+The next line shows that there is a directory called `/opt/mdyalog/15.0/32/unicode/ws` which contains 31 workspaces.
+That directory and the workspaces in it are created by Dyalog during the installation process.
+
+There's also a Dyalog directory called `/opt/mdyalog/15.0/32/unicode/samples/fun` which contains some fun workspaces including
+APL implementations of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) and the game of
+sudoku.
 
 ## Finishing your session
 
@@ -224,7 +339,7 @@ you've learned.
 
 ### 1.1
 
-Create a variable called __income__ containing the vector 10000 11570 11000 12550. (This might contain someone's income
+Create a variable called _income_ containing the vector 10000 11570 11000 12550. (This might contain someone's income
 for the last four quarters of the year.)
 
 Create another variable containing the vector 7250 8345 9547 12650. This might show how much that person spent
@@ -235,7 +350,7 @@ be negative.
 
 ### 1.2
 
-Create a variable __weights__ containing the numbers 10.2 8,3 7.5 and convert from pounds to kilogrammes.
+Create a variable _weights_ containing the numbers 10.2 8,3 7.5 and convert from pounds to kilogrammes.
 A pound is roughly 0.45 kilogrammes,
 
 
@@ -243,25 +358,6 @@ A pound is roughly 0.45 kilogrammes,
 
 Here's the layout of the UK APL keyboard.
 
-~~~~~~~~
-┌────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬─────────┐
-│¬   │! ⌶ │" ⍫ │£ ⍒ │$ ⍋ │% ⌽ │^ ⍉ │& ⊖ │* ⍟ │( ⍱ │) ⍲ │_ ! │+ ⌹ │Backspace│
-│` ⋄ │1 ¨ │2 ¯ │3 < │4 ≤ │5 = │6 ≥ │7 > │8 ≠ │9 ∨ │0 ∧ │- × │= ÷ │         │
-├────┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬──────┤
-│Tab    │Q   │W   │E ⍷ │R   │T ⍨ │Y   │U   │I ⍸ │O ⍥ │P ⍣ │{ ⍞ │} ⍬ │Enter │
-│       │q ? │w ⍵ │e ∊ │r ⍴ │t ~ │y ↑ │u ↓ │i ⍳ │o ○ │p * │[ ← │] → │      │
-├───────┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┐     │
-│Caps    │A   │S   │D   │F   │G   │H   │J ⍤ │K ⌸ │L ⌷ │: ≡ │@ ≢ │~   │     │
-│Lock    │a ⍺ │s ⌈ │d ⌊ │f _ │g ∇ │h ∆ │j ∘ │k ' │l ⎕ │; ⍎ │' ⍕ │#   │     │
-├──────┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴────┴─────┤
-│Shift │| ⊣ │Z   │X   │C   │V   │B   │N   │M   │< ⍪ │> ⍙ │? ⍠ │Shift       │
-│      │\ ⊢ │z ⊂ │x ⊃ │c ∩ │v ∪ │b ⊥ │n ⊤ │m | │, ⍝ │. ⍀ │/ ⌿ │            │
-├──────┴┬───┴─┬──┴───┬┴────┴────┴────┴────┴────┴┬───┴──┬─┴────┼─────┬──────┤
-│Ctrl   │Win  │Alt   │                          │Alt Gr│Win   │Menu │Ctrl  │
-│       │     │      │                          │      │      │     │      │
-└───────┴─────┴──────┴──────────────────────────┴──────┴──────┴─────┴──────┘
-~~~~~~~~
+TODO: Explain about key shifts and move earlier in text.
 
-If you get really hooked on APL you will want to invest in a Dyalog keyboard.
-
-![Dyalog APL keyboard](images/dk_rc-800.jpg)
+![Dyalog APL keyboard](images/apl-keyboard.jpg)
