@@ -275,6 +275,7 @@ What do you think is the rank of a scalar: a number on its own, like the variabl
 A scalar has _rank zero_. Don't worry if that seems a little strange at first; just try to remember it,
 and don't let it surprise you when you see it again!
 
+
 ## Monadic and Dyadic functions
 
 Like `⍴` , many of APL's symbols have two meanings depending on whether they are used with one argument or two.
