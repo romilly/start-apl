@@ -34,7 +34,7 @@ In APL you can create _empty_ character vectors:
 0
 ~~~~~~~~
 
-I> The variable name _empty_ is not a special name. I used it just to
+I> The variable name _empty_ is not a special name. I just used it to
 make clear that it contained an empty vector.
 
 You can create an empty character vector by typing a couple of quotation
@@ -60,9 +60,42 @@ You can create an empty numeric vector using the same trick:
       
 ~~~~~~~~
 
+Alternatively you can use `⍳`:
 
+~~~~~~~~
+      ⍳0
 
-You can use both monadic and dyadic `⍴` on character data.
+~~~~~~~~
+
+Finally, there's a special symbol `⍬` that you can use to refer to the
+empty numeric vector. It's called _zilde_ because it's a zero combined with
+`~` -a _tilde_.
+
+~~~~~~~~
+      ⍬
+
+      ⍴⍬
+0
+~~~~~~~~
+
+### Catenate with empty arrays
+
+What happens if you join an empty vector to a vector with something in it?
+
+~~~~~~~~
+      ⍬,⍳3
+1 2 3
+      '','Hello'
+Hello
+      'Hello',''
+Hello
+~~~~~~~~
+
+The result is just the non-empty vector.
+
+## Shape and reshape with character arrays.
+
+You can use both monadic and dyadic `⍴` on character arrays.
 
 ~~~~~~~~
       ⍴description
@@ -136,6 +169,7 @@ Hello Romilly
 Hello You!
 ~~~~~~~~
 
+
 As with numbers, you can use ravel `,` to turn a matrix into a vector.
 
 ~~~~~~~~~
@@ -144,4 +178,59 @@ EnglandFrance GermanySpain
 ~~~~~~~~~
 
 ## Catenate and matrices
+
+You can use catenate with matrices as well as with vectors.
+
+~~~~~~~~
+      a ← 2 3⍴⍳6
+      a
+1 2 3
+4 5 6
+      b ← 10+2 3⍴⍳6
+      b
+11 12 13
+14 15 16
+      a,b
+1 2 3 11 12 13
+4 5 6 14 15 16
+~~~~~~~~
+
+The second matrix is catenated to the right of the first one.
+
+Can you catenate one matrix on top of the other? Yes, using `⍪`.
+
+~~~~~~~~
+      a⍪b
+ 1  2  3
+ 4  5  6
+11 12 13
+14 15 16
+~~~~~~~~
+
+What happens if the matrices have different sizes?
+
+~~~~~~~~
+      c←20+3 3⍴⍳9
+      c
+21 22 23
+24 25 26
+27 28 29
+      a,c
+LENGTH ERROR
+      a,c
+     ∧
+      a⍪c
+ 1  2  3
+ 4  5  6
+21 22 23
+24 25 26
+27 28 29
+~~~~~~~~
+
+APL doesn't know what you want if you try to catenate a two-row matrix
+alongside a three-row matrix, so it returns a _LENGTH ERROR_.
+
+If you want to catenate a three-column matrix on top of a three-column
+matrix, that's fine.
+
 

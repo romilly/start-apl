@@ -95,7 +95,7 @@ Try some more examples:
       120 ÷ 2 3 4 5 6
 60 40 30 24 20
       0.1 0.1 0.1 0.1 × 3 5 4 2
-0.3 0.5	0.4 0.2
+0.3 0.5 0.4 0.2
 ~~~~~~~~
 
 That last example works, but it's a bit tedious to type. Fortunately there is an easy shortcut.
@@ -209,7 +209,7 @@ problem at three o'clock in the morning.
 
 If comments would help you or others to read your code at 3 AM, add those comment!
 
-## Catenation
+## Catenate
 
 So far you've seen ways of combining vectors based on arithmetic functions.
 

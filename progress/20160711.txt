@@ -3,8 +3,8 @@
     6    23   124 manuscript/Appendix2.md
    15    83   579 manuscript/Author.md
    15   105   607 manuscript/Background.md
-  362  1939 11275 manuscript/Chapter1.md
+  362  1939 11273 manuscript/Chapter1.md
   571  2334 12766 manuscript/Chapter2.md
-  147   444  2808 manuscript/Chapter3.md
+  236   701  4236 manuscript/Chapter3.md
   202  1270  7553 manuscript/Introduction.md
- 1345  6353 36688 total
+ 1434  6610 38114 total
