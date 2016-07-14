@@ -233,4 +233,18 @@ alongside a three-row matrix, so it returns a _LENGTH ERROR_.
 If you want to catenate a three-column matrix on top of a three-column
 matrix, that's fine.
 
+When you catenate two arrays they must be _conformable_;
+the way to join them must be clear and unambiguous.
+
+You can always catenate a vector with a scalar or vector.
+
+You can catenate two matrices if they have the same number of items in
+the dimension that's going to be extended: columns if you're using `,`
+and rows if you're using `⍪`. 
+
+What about joining a vector and a matrix?
+
+
+
+
 
