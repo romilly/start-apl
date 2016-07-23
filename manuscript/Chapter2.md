@@ -225,7 +225,8 @@ If you ask APL to reshape an array and there are not enough elements to populate
 array you provide as often as necessary.
 
 ~~~~~~~~
-      2 3⍴1 2 3
+      mat←2 3⍴1 2 3
+      mat
 1 2 3
 1 2 3
 ~~~~~~~~
@@ -549,9 +550,29 @@ Here's what is going on:
 
 Here's a chance to consolidate your knowledge.
 
-TBD.
+### 2.1
 
-<!-- TODO: Add exercises -->
+You buy four items whose prices are £4.50, £3.20, £0.50 and £1.27.
+
+What is the total price? The largest price? The smallest?
+
+### 2.2
+
+Three stores report their quarterly widget sales, laid out as a table:
+
+20 25 23 26
+
+15 18 17 17
+
+21 24 27 25
+
+What are the total sales per store? The total sales per quarter? The total sales overall?
+
+What was the largest total for any store?
+
+
+
+
 
 
 

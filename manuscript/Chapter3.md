@@ -242,7 +242,9 @@ You can catenate two matrices if they have the same number of items in
 the dimension that's going to be extended: columns if you're using `,`
 and rows if you're using `⍪`. 
 
-What about joining a vector and a matrix?
+What about catenating a vector and a matrix?
+
+
 
 
 

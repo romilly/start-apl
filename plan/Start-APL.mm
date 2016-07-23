@@ -185,7 +185,8 @@
 <node TEXT="&#x230a;" ID="ID_738869711" CREATED="1466960183459" MODIFIED="1467027042518"/>
 </node>
 </node>
-<node TEXT="indexing" ID="ID_135937942" CREATED="1466154875353" MODIFIED="1468225012949" BACKGROUND_COLOR="#ffffff">
+<node TEXT="indexing" ID="ID_135937942" CREATED="1466154875353" MODIFIED="1469254968280" BACKGROUND_COLOR="#ffffff">
+<icon BUILTIN="button_ok"/>
 <node TEXT="picking items from a vector" ID="ID_1022256700" CREATED="1467621003259" MODIFIED="1467696984822">
 <icon BUILTIN="button_ok"/>
 </node>
@@ -491,6 +492,20 @@
 </node>
 </node>
 </node>
+<node TEXT="translations" ID="ID_1449737638" CREATED="1468488785361" MODIFIED="1468488788813">
+<node TEXT="collaborate with Michael Baas to write German version" ID="ID_1205539275" CREATED="1468488742793" MODIFIED="1468488829249"/>
+<node TEXT="Spanish" ID="ID_979105893" CREATED="1468488793065" MODIFIED="1468488795869"/>
+<node TEXT="Brazilian" ID="ID_1322253822" CREATED="1468488796385" MODIFIED="1468488800127"/>
+<node TEXT="Japanese" ID="ID_639934101" CREATED="1468488800584" MODIFIED="1468488803487"/>
+<node TEXT="Chinese" ID="ID_947745257" CREATED="1468488803960" MODIFIED="1468488806133"/>
+</node>
+<node TEXT="APL animator" ID="ID_93528919" CREATED="1468488844233" MODIFIED="1468489092821" LINK="../../RareBlog/plan/ann/Marketing-for-Dyalog.mm"/>
+<node TEXT="micro-steps" ID="ID_487876363" CREATED="1468507572808" MODIFIED="1468507597606"/>
+<node TEXT="drill system" ID="ID_962504151" CREATED="1468507577672" MODIFIED="1468507582326"/>
+<node TEXT="automating exercises" ID="ID_1028457228" CREATED="1468507607088" MODIFIED="1468507612724"/>
+<node TEXT="make learning APL sooo much fun that everyone wants to do it!" ID="ID_1351869265" CREATED="1468507633055" MODIFIED="1468507651877"/>
+<node TEXT="record all student failures so I can automate diagnosis/correction" ID="ID_73314236" CREATED="1468507674751" MODIFIED="1468507705068"/>
+<node TEXT="code invariants, write haskell-like tester to verify student solution to problem" ID="ID_802712532" CREATED="1468507965400" MODIFIED="1468507999942"/>
 </node>
 <node TEXT="Fridge" ID="Freemind_Link_1954142386" CREATED="1266488793745" MODIFIED="1266488959040" COLOR="#9679df">
 <icon BUILTIN="desktop_new"/>
@@ -547,6 +562,7 @@
 <node TEXT="Resources" POSITION="left" ID="Freemind_Link_1594441695" CREATED="1273319832507" MODIFIED="1296303609303" COLOR="#33ff33">
 <icon BUILTIN="password"/>
 <node TEXT="Longest Collatz sequence" ID="ID_590839814" CREATED="1465985721459" MODIFIED="1465998408816" LINK="https://projecteuler.net/problem=14"/>
+<node TEXT="Sean d@Souza on accelerating learning/&lt;10K hours" ID="ID_1611393374" CREATED="1468508005463" MODIFIED="1468508029614"/>
 </node>
 </node>
 </map>
