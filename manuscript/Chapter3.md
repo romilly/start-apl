@@ -24,7 +24,7 @@ As you'd expect, character data can be assigned to a variable.
 
 Character vectors in APL correspond to strings in other languages.
 
-In APL you can create _empty_ character vectors:
+In APL you can create _empty_ character vectors like this:
 
 ~~~~~~~~
       empty ← ''
@@ -69,7 +69,7 @@ Alternatively you can use `⍳`:
 
 Finally, there's a special symbol `⍬` that you can use to refer to the
 empty numeric vector. It's called _zilde_ because it's a zero combined with
-`~` -a _tilde_.
+`~` which is called _tilde_.
 
 ~~~~~~~~
       ⍬
@@ -95,7 +95,7 @@ The result is just the non-empty vector.
 
 ## Shape and reshape with character arrays.
 
-You can use both monadic and dyadic `⍴` on character arrays.
+You can use both monadic and dyadic `⍴` (shape and reshape) on character arrays.
 
 ~~~~~~~~
       ⍴description
@@ -105,8 +105,10 @@ APL is the life
 ~~~~~~~~
 
 I> In the example above you can see a space after `⍴`. It's there to make the
-APL easier for you to read, but whitespace outside quotation marks is
-optional in APL.
+APL easier for you to read.
+
+Whitespace outside quotation marks is
+optional in APL, so you don't have to use a space there if you don't want to.
 
 You can create character matrices.
 
@@ -120,6 +122,38 @@ HEN
 
 I> You can also create higher-rank character arrays if you need
 them.
+
+You can find out the rank (number of dimensions) of a character array in exactly the same
+way that you did for numeric arrays:
+
+~~~~~~~~
+      description
+APL is the life and the soul of the party.
+      ⍴description
+42
+      ⍴⍴description
+1
+      countries
+England
+France 
+Germany
+Spain  
+      ⍴countries
+4 7
+      ⍴⍴countries
+2
+~~~~~~~~
+
+Like numeric scalars, character scalars have empty shape and zero rank.
+
+~~~~~~~~
+      ⍴'A'
+
+      ⍴⍴'A'
+0
+~~~~~~~~
+
+## Indexing character arrays
 
 
 You can use indexing to select characters from a character vector.
@@ -242,7 +276,122 @@ You can catenate two matrices if they have the same number of items in
 the dimension that's going to be extended: columns if you're using `,`
 and rows if you're using `⍪`. 
 
-What about catenating a vector and a matrix?
+What about catenating a matrix and a vector?
+Sales currently contains four columns of quaterly sales data:
+
+~~~~~~~~
+      sales
+10  9 12 16
+ 8 10 11 14
+ 9  6 10 18
+~~~~~~~~
+
+Let's append a fifth quarter's figures.
+
+~~~~~~~~
+      sales,11 9 12
+10  9 12 16 11
+ 8 10 11 14  9
+ 9  6 10 18 12
+~~~~~~~~
+
+What if we have a new product? How can we add a new row to the sales matrix?
+
+~~~~~~~~
+      sales⍪9 8 15 17
+10  9 12 16
+ 8 10 11 14
+ 9  6 10 18
+ 9  8 15 17
+~~~~~~~~
+
+So, summing up what you've seen so far:
+1. _catenate_ (represented by a comma) joins two arrays along their **last** dimension.
+1. _catenate first_ (represented by a comma combined with a bar) joins two arrays along their **first** dimension.
+
+
+## Specifying an axis
+
+What if an array has rank three? (Recall that rank three meaans that the array has three dimensions).
+
+A while back you created an array _international sales_ with three dimensions.
+
+~~~~~~~~
+      ⍴international_sales
+3 2 4
+      international_sales
+7 4 6 8
+7 6 6 9
+       
+8 5 5 4
+7 4 6 8
+       
+6 7 6 5
+7 4 6 9
+~~~~~~~~
+
+The array has three planes, two rows per plane and four columns per row.
+
+The three planes might represent countries, the two rows could be products, and the four columns might be months.
+
+If we had a new month's data that might have three rows (one per county) and two columns (one per product).
+
+The additional sales data would look like this:
+
+~~~~~~~~
+      new_sales_data←3 2⍴10 9 5 9 6 8 
+      new_sales_data 
+10 9
+ 5 9
+ 6 8
+~~~~~~~~
+
+You can catenate it to the existing data like this:
+
+~~~~~~~~
+    international_sales, new_sales_data  
+7 4 6 8 10
+7 6 6 9  9
+          
+8 5 5 4  5
+7 4 6 8  9
+          
+6 7 6 5  6
+7 4 6 9  8
+~~~~~~~~
+
+I> You didn't assign the result of the catenation, so it displayed in your session but the 
+international_sales array was unchanged.
+
+Similarly, you could catenate an extra country like this:
+
+~~~~~~~~
+    international_sales⍪2 4⍴9 8 9 8 7 8 6 9  
+7 4 6 8
+7 6 6 9
+       
+8 5 5 4
+7 4 6 8
+       
+6 7 6 5
+7 4 6 9
+       
+9 8 9 8
+7 8 6 9
+~~~~~~~~
+
+
+
+
+
+
+
+
+~~~~~~~~
+
+~~~~~~~~
+
+
 
 
 
