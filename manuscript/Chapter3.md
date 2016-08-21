@@ -307,12 +307,14 @@ What if we have a new product? How can we add a new row to the sales matrix?
 
 So, summing up what you've seen so far:
 1. _catenate_ (represented by a comma) joins two arrays along their **last** dimension.
-1. _catenate first_ (represented by a comma combined with a bar) joins two arrays along their **first** dimension.
+1. _catenate first_ (represented by a comma combined with a bar) joins two arrays along
+their **first** dimension.
 
 
 ## Specifying an axis
 
-What if an array has rank three? (Recall that rank three meaans that the array has three dimensions).
+What if an array has rank three? (Recall that rank three means that the array has
+three dimensions).
 
 A while back you created an array _international sales_ with three dimensions.
 
@@ -332,9 +334,37 @@ A while back you created an array _international sales_ with three dimensions.
 
 The array has three planes, two rows per plane and four columns per row.
 
-The three planes might represent countries, the two rows could be products, and the four columns might be months.
+The three planes might represent countries, the two rows could be products,
+and the four columns might be months.
 
-If we had a new month's data that might have three rows (one per county) and two columns (one per product).
+What happens if we catenate the array to itself?
+
+(In this case that wouldn't be a meaningful operation. It's just a way for you
+to explore catenation on three-dimensional arrays.)
+ 
+~~~~~~~~
+       international_sales,international_sales
+7 4 6 8 7 4 6 8
+7 6 6 9 7 6 6 9
+               
+8 5 5 4 8 5 5 4
+7 4 6 8 7 4 6 8
+               
+6 7 6 5 6 7 6 5
+7 4 6 9 7 4 6 9
+~~~~~~~~
+ 
+As you can see this appends the second copy of the `international_sales` data to the
+right of the first.
+ 
+In other words, by default *catenate extends columns* which form the *last dimension*
+of an array.
+
+While informative, that example was not very realistic. What about some operations
+which might actually arise in a real application.
+ 
+If we had a new month's data, that might have three rows (one per county) and
+two columns (one per product).
 
 The additional sales data would look like this:
 
@@ -360,8 +390,8 @@ You can catenate it to the existing data like this:
 7 4 6 9  8
 ~~~~~~~~
 
-I> You didn't assign the result of the catenation, so it displayed in your session but the 
-international_sales array was unchanged.
+I> You didn't assign the result of the catenation, so it displayed in your
+session but the international_sales array was unchanged.
 
 Similarly, you could catenate an extra country like this:
 
