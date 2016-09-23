@@ -424,7 +424,7 @@ be negative.
 
 ### 1.2
 
-Create a variable _weights_ containing the numbers 10.2 8,3 7.5 and
+Create a variable _weights_ containing the numbers 10.2 8.3 7.5 and
 convert from pounds to kilogrammes.
 
 A pound is roughly 0.45 kilogrammes.
