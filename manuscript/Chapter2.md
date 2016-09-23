@@ -333,7 +333,7 @@ If the argument is already an integer it is unchanged.
 
 # Indexing
 
-Once you'ver created an array you often want to select items from it.
+Once you've created an array you often want to select items from it.
 
 Most computer languages let you do this by _indexing_ the array, and APL
 is no exception. However, indexing in APL is particularly powerful.
