@@ -2,24 +2,25 @@
 
 ## Getting started
 
-Time to start APL - and start learning!
+Time to start APL - and start learning this fun, expressive language!
 
 To begin your first APL session on a Raspberry Pi, run
 _Dyalog_ from the _Programming_ menu.
 
-(If you're using RIDE to connect to a Raspberry Pi or some other
-computer with APL installed, follow the instructions in Appendix 2 
-once I've written them!)
+You should see a screen like this. That's the *RIDE* (APL's development environment).
 
-![Dyalog menu](images/dy1.png)
+![Dyalog menu](images/ride-4-0.png)
 
-The APL environment includes a
+The RIDE includes a
 [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)
 - a Read-Evaluate-Print-Loop.
 
 That means that you can write code and try it out right away. That's a
 great way to learn a language, and it's also a great way to develop
 software.
+
+For now, don't worry about the keyboard-like display at the top of the RIDE.
+You'll find out about that a little later.
 
 In the examples that follow, the code that **you** type is indented by
 six spaces. Once you start your session you'll see that APL inserts
@@ -58,16 +59,20 @@ divide? Of course APL does those too.
 APL uses the same symbols that I was taught at school: `×` for multiply,
 and `÷` for divide.
 
-If you're using a Windows keyboard you can hold
+# Special APL characters
+
+Here's the layout of the UK APL keyboard with APL symbols added.
+
+![Dyalog APL keyboard](images/apl-keyboard.jpg)
+
+If you're using a keyboard with a Windows key you can hold
 down the Windows key to type APL symbols.
 
-You may need to configure your keyboard for APL. You'll find instructions
-in Appendix 3.
+* Type `Windows-` and you should see a `×` symbol
+* Type `Windows-equals` to get the `÷` sign.
+* Type `Windows-shift-equals` to get the ⌹ sign.
 
-* Type Windows- and you should see a `×` symbol
-* Type Windows-equals to get the `÷` sign.
-
-You can find more about how to type APL symbols at the end of this chapter.
+# Multiplication and division
 
 Time to try out multiplication and division.
 
@@ -142,6 +147,22 @@ error.
 
 T> Don't worry about causing APL errors. APL will try to tell you what went
 wrong, and you won't break anything :)
+
+## More about the RIDE
+
+The RIDE has a lot of useful features. We won't cover them all here but one is so
+valuable when you're leaning that we have to mention it.
+
+Try moving your cursor up a few lines to anAPL expression that you entered earlier
+in your session. Now make a change to the line and press enter.
+
+The RIDE will restore the version you typed earlier and enter your changed version
+at the bottom of your session, so you can make a small change to something without
+having to retype it all.
+
+Really useful!
+
+Let's go back to APL.
 
 ## Assigning values to variables
 
@@ -429,11 +450,7 @@ convert from pounds to kilogrammes.
 
 A pound is roughly 0.45 kilogrammes.
 
+# Having fun?
 
-## The Dyalog APL keyboard
-
-Here's the layout of the UK APL keyboard.
-
-TODO: Explain about key shifts and move earlier in text.
-
-![Dyalog APL keyboard](images/apl-keyboard.jpg)
+That's the end of the sample content. If you want more, you can buy
+the early access version of the book at [Leanpub](https://leanpub.com/learnapl).
