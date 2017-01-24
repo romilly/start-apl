@@ -162,7 +162,7 @@ wrong, and you won't break anything :)
 ## More about the RIDE
 
 The RIDE has a lot of useful features. We won't cover them all here but one is so
-valuable when you're leaning that we have to mention it.
+valuable when you're learning that we have to mention it.
 
 Try moving your cursor up a few lines to anAPL expression that you entered earlier
 in your session. Now make a change to the line and press enter.
