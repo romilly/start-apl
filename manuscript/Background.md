@@ -29,20 +29,6 @@ You can [download a free PDF](http://www.dyalog.com/uploads/documents/MasteringD
 of Bernard's book or buy a
 [print-on-demand version on Amazon](http://www.amazon.co.uk/Mastering-Dyalog-APL-Complete-Introduction/dp/0956463800/ref=sr_1_1?ie=UTF8&qid=1387290291&sr=8-1&keywords=mastering+dyalog)
 
-## Another approach
-
-You can also learn APL by experiment!
-
-Just hover your mouse over a symbol on the RIDE.
-The RIDE will tell you the symbol's name and its purpose,
-and give simple examples of its use.
- 
-Try executing the examples and then try different data. You'll soon discover
-a lot about APL's capabilities.
-
-Don't worry while you're experimenting. If you make a mistake you won't break
-anything :)
-
 The next chapter will give you a first taste of the language and its
 development environment.
 
