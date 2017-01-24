@@ -61,12 +61,23 @@ and `÷` for divide.
 
 # Special APL characters
 
+There are *two ways* that you can type the special APL characters when
+you are writing code.
+
+Remember that keyboard that's displayed at the top of the RIDE window?
+If you hover your mouse over an APL symbol, the RIDE will
+tell you its name and what it does.
+
+If you mouse-click on the symbol, the RIDE will type that
+symbol for you in your APL session.
+
+Alternatively you can type APL symbols directly from the keyboard.
+
 Here's the layout of the UK APL keyboard with APL symbols added.
 
 ![Dyalog APL keyboard](images/apl-keyboard.jpg)
 
-If you're using a keyboard with a Windows key you can hold
-down the Windows key to type APL symbols.
+Use the Windows key to help you type APL symbols.
 
 * Type `Windows-` and you should see a `×` symbol
 * Type `Windows-equals` to get the `÷` sign.
