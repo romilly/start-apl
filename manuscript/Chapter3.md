@@ -360,6 +360,9 @@ right of the first.
 In other words, by default *catenate extends columns* which form the *last dimension*
 of an array.
 
+I> You didn't assign the result of the catenation, so it displayed in your
+session but the international_sales array was unchanged.
+
 While informative, that example was not very realistic. What about some operations
 which might actually arise in a real application.
  
@@ -369,31 +372,31 @@ two columns (one per product).
 The additional sales data would look like this:
 
 ~~~~~~~~
-      new_sales_data←3 2⍴10 9 5 9 6 8 
+      new_sales_data←3 2⍴7 9 5 9 6 8 
       new_sales_data 
-10 9
- 5 9
- 6 8
+7 9
+5 9
+6 8
 ~~~~~~~~
 
 You can catenate it to the existing data like this:
 
 ~~~~~~~~
-    international_sales, new_sales_data  
-7 4 6 8 10
-7 6 6 9  9
-          
-8 5 5 4  5
-7 4 6 8  9
-          
-6 7 6 5  6
-7 4 6 9  8
+     international_sales,new_sales_data  
+7 4 6 8 7
+7 6 6 9 9
+         
+8 5 5 4 5
+7 4 6 8 9
+         
+6 7 6 5 6
+7 4 6 9 8
 ~~~~~~~~
 
-I> You didn't assign the result of the catenation, so it displayed in your
-session but the international_sales array was unchanged.
+I> Once again, you didn't assign the result of the catenation, so the international_sales array
+was unchanged.
 
-Similarly, you could catenate an extra country like this:
+You could catenate the data for an extra country like this:
 
 ~~~~~~~~
     international_sales⍪2 4⍴9 8 9 8 7 8 6 9  
@@ -423,9 +426,24 @@ Similarly, you could catenate an extra country like this:
 
 
 
+## Mixed functions
+
+You've met quite a few APL primitive functions so far,
+including `+ - × ÷ ,` and `⍴`.
+
+As you know, the arithmetic primitives have a very useful feature - *scalar extension*.
+
+Here's an example. If the primitive function `+` is used dyadically with a scalar left or right argument,
+ APL adds the scalar repeatedly to each element of the other argument.
+ 
+ ~~~~~~~~~
+       2 + 3 4 8
+5 6 10
+ ~~~~~~~~~
 
 
-
+By constrast, `⍴`'s result is a reshaped version of its right argument. Scalar extension makes no sense here.
+Functions like `⍴` are called *mixed* functions
 
 
 

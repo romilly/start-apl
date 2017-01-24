@@ -1,0 +1,10 @@
+    2    17   191 manuscript/after.md
+   25   138   785 manuscript/Appendix1.md
+    6    23   124 manuscript/Appendix2.md
+   15    83   579 manuscript/Author.md
+   15   105   607 manuscript/Background.md
+  438  1935 11308 manuscript/Chapter1.md
+  592  2403 13144 manuscript/Chapter2.md
+  431  1389  8004 manuscript/Chapter3.md
+  202  1270  7553 manuscript/Introduction.md
+ 1726  7363 42295 total

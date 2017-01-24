@@ -517,6 +517,7 @@
 <node TEXT="make learning APL sooo much fun that everyone wants to do it!" ID="ID_1351869265" CREATED="1468507633055" MODIFIED="1468507651877"/>
 <node TEXT="record all student failures so I can automate diagnosis/correction" ID="ID_73314236" CREATED="1468507674751" MODIFIED="1468507705068"/>
 <node TEXT="code invariants, write haskell-like tester to verify student solution to problem" ID="ID_802712532" CREATED="1468507965400" MODIFIED="1468507999942"/>
+<node TEXT="Glossary" ID="ID_1173742012" CREATED="1484042232074" MODIFIED="1484042236464"/>
 </node>
 <node TEXT="Fridge" ID="Freemind_Link_1954142386" CREATED="1266488793745" MODIFIED="1266488959040" COLOR="#9679df">
 <icon BUILTIN="desktop_new"/>
@@ -574,6 +575,8 @@
 <icon BUILTIN="password"/>
 <node TEXT="Longest Collatz sequence" ID="ID_590839814" CREATED="1465985721459" MODIFIED="1465998408816" LINK="https://projecteuler.net/problem=14"/>
 <node TEXT="Sean d@Souza on accelerating learning/&lt;10K hours" ID="ID_1611393374" CREATED="1468508005463" MODIFIED="1468508029614"/>
+<node TEXT="https://www.raspberrypi.org/blog/programming-pi-zero-usb/" ID="ID_1527600994" CREATED="1483994687477" MODIFIED="1483994687477" LINK="https://www.raspberrypi.org/blog/programming-pi-zero-usb/"/>
 </node>
+<node TEXT="Pi hardware for APL" POSITION="right" ID="ID_457195201" CREATED="1484239510176" MODIFIED="1484296924875" LINK="aplers-pi-quickstart-guide.mm"/>
 </node>
 </map>
