@@ -164,7 +164,7 @@ wrong, and you won't break anything :)
 The RIDE has a lot of useful features. We won't cover them all here but one is so
 valuable when you're learning that we have to mention it.
 
-Try moving your cursor up a few lines to anAPL expression that you entered earlier
+Try moving your cursor up a few lines to an APL expression that you entered earlier
 in your session. Now make a change to the line and press enter.
 
 The RIDE will restore the version you typed earlier and enter your changed version
