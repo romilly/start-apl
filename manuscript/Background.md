@@ -2,13 +2,13 @@
 
 This is an extract from a new Introductory book on APL. It features
 Dyalog's free implementation on the Raspberry Pi, but you can also use
-it if you are learning Dyalog APL on Windows, OS/X or other Linux systems.
+it if you are learning Dyalog APL on Microsoft Windows, Mac OS or other Linux systems.
 
 I hope it will motivate you to take a look at this powerful language and
 help you to get started.
 
-The book is ideal if you are entering the Dyalog annual problem-solving
-competition.
+The book is ideal if you are entering the [Dyalog annual problem-solving
+competition](http://www.dyalog.com/student-competition.htm).
 
 An early access version of the book is [available on Leanpub](https://leanpub.com/learnapl).
 
@@ -20,9 +20,8 @@ The book should be complete by the end of April 2017.
 All Leanpub purchases offer an unconditional 45-day money-back guarantee.
 
 There's a slower-paced, more detailed, and much longer textbook called
-*Mastering Dyalog APL* by Bernard Legrand.
-
-It's is written for Dyalog for Microsoft Windows, but the language elements
+*Mastering Dyalog APL* by Bernard Legrand. It's written for Dyalog for
+Microsoft Windows, but the language elements
 (which form most of the content) apply to all platforms.
 
 You can [download a free PDF](http://www.dyalog.com/uploads/documents/MasteringDyalogAPL.pdf)

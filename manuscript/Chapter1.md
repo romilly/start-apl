@@ -29,7 +29,7 @@ those spaces for you when it's your turn to type.
 APL's output is **not** indented, so you can see what you should type
 and what you should expect APL to output.
 
-So - here goes. Type
+So - here goes. Type:
 
 ~~~~~~~~
       2 + 2
@@ -98,7 +98,7 @@ Time to try out multiplication and division.
 1.333333333
 ~~~~~~~~
 
-Now for something rather different. Try the experiment below,
+Now for something rather different. Try the experiment below:
 
 ~~~~~~~~
       1 2 3 + 4 5 6
@@ -109,7 +109,7 @@ What's going on?
 
 ## Array programming without explicit loops
 
-APL treat the two lists of numbers as _vectors_ and it adds the
+APL treats the two lists of numbers as _vectors_ and it adds the
 corresponding elements together.
 
 A lot of calculations need to be done on vectors, and APL's built-in
@@ -142,7 +142,7 @@ single number repeatedly. A single number on its own is called a
 _scalar_.
 
 The repeated use of a scalar when you're
-adding it to a vector is called _scalar extension_.
+adding it to a vector is called _singleton extension_.
  
 What happens if you try to add two vectors of different lengths?
 
@@ -153,7 +153,7 @@ LENGTH ERROR
      ∧
 ~~~~~~~~
 
-APL doesn't kow what you want to do, so it treats the expression as an
+APL doesn't know what you want to do, so it treats the expression as an
 error.
 
 T> Don't worry about causing APL errors. APL will try to tell you what went
@@ -179,7 +179,7 @@ Let's go back to APL.
 
 It would be rather tedious if you had to type values in to APL every
 time you wanted to use them. Fortunately, you can
-tell APl to remember values you want to use repeatedly.
+tell APL to remember values you want to use repeatedly.
 
 Suppose you are currently 23. Type:
 
@@ -248,7 +248,7 @@ documenting it using _comments_.
 I> The APL symbol for a comment is `⍝` - often called _lamp_ because
 it's intended to _illuminate_ your code.
 
-Whenever the APl interpreter encounters a comment it ignores the rest of
+Whenever the APL interpreter encounters a comment it ignores the rest of
 that line. You'll find two styles of comment widely used in APL code.
 
 1. A stand-alone comment starts with a lamp symbol. That means that nothing
@@ -324,7 +324,7 @@ defined. Try it out:
 age ages
 ~~~~~~~~
 
-In APL, system commands start with an open right bracket.
+In APL, system commands start with an open right parenthesis `)`.
 The _vars_ command tells you the name of the variables that
 are currently defined.
 
@@ -364,7 +364,7 @@ you can have several workspaces, one for each project.
 Each has a name which will help you find the workspace you want to use
 for any given session.
  
-You can find out all your local workspaces using the )LIB command.
+You can find out all your local workspaces using the )lib command.
 
 Here's what happened when I ran it:
 
@@ -399,9 +399,9 @@ installation process.
 
 There's also a Dyalog directory called
 `/opt/mdyalog/15.0/32/unicode/samples/fun` which contains some fun
-workspaces including an implementation of
-[Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
-and the game of sudoku.
+workspaces including
+[John Scholes' implementation of Conway's Game of Life](https://www.youtube.com/watch?v=a9xAKttWgP4 )
+and [the game of sudoku](https://www.youtube.com/watch?v=DmT80OseAGs ).
 
 ## Finishing your session
 
@@ -414,12 +414,12 @@ system command:
 
 APL will close down.
 
-If you want to get your work back, restart APL from the Programming menu.
+If you want to get your work back, restart APL from the *Programming* menu.
 
 You will start a new session with a new
 clear workspace. To resume your work you must load your saved workspace.
 
-Type
+Type:
 
 ~~~~~~~~
       )load course
