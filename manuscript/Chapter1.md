@@ -132,8 +132,8 @@ That last example works, but it's a bit tedious to type. Fortunately
 there is an easy shortcut.
 
 ~~~~~~~~
-      0.1 + 3 5	4 2
-3.1 5.1	4.1 2.1
+      0.1 + 3 5 4 2
+3.1 5.1 4.1 2.1
 ~~~~~~~~
 
 If you ask APL to multiply (or add, or subtract, or divide) a number on
