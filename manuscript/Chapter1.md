@@ -89,7 +89,7 @@ Time to try out multiplication and division.
 
 ~~~~~~~~
       2 × 3
-12
+6
       5÷2
 2.5
       12÷4  
